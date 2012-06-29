@@ -1,0 +1,64 @@
+\relax 
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Characterization Methods}{7}{chapter.4}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:characterization}{{4}{7}{Characterization Methods\relax }{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Imaging Techniques}{7}{section.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Scanning Electron Microscopy}{7}{subsection.4.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Atomic Force Microscopy}{7}{subsection.4.1.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Compositional Analysis}{7}{section.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Energy-Dispersive X-Ray Spectroscopy}{7}{subsection.4.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}X-Ray Fluorescence Spectroscopy}{7}{subsection.4.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Rutherford Backscattering Spectroscopy}{7}{subsection.4.2.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Thin Film Characterization}{7}{section.4.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Variable Angle Spectroscopic Ellipsometry}{7}{subsection.4.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Ellipsometric Beam Path and Modeling Parameters}}{8}{figure.caption.9}}
+\newlabel{fig:ellipsometry}{{4.1}{8}{Ellipsometric Beam Path and Modeling Parameters\relax }{figure.caption.9}{}}
+\newlabel{eq:ellipsometry}{{4.1}{8}{Variable Angle Spectroscopic Ellipsometry\relax }{equation.4.3.1}{}}
+\newlabel{eq:fresnel}{{4.2}{8}{Variable Angle Spectroscopic Ellipsometry\relax }{equation.4.3.2}{}}
+\newlabel{eq:complexindex}{{4.3}{8}{Variable Angle Spectroscopic Ellipsometry\relax }{equation.4.3.3}{}}
+\citation{woollam-web}
+\newlabel{eq:dielectricfunction}{{4.4}{9}{Variable Angle Spectroscopic Ellipsometry\relax }{equation.4.3.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces J.A. Woollam M-2000U Ellipsometer}}{10}{figure.caption.10}}
+\newlabel{fig:M2000_image}{{4.2}{10}{J.A. Woollam M-2000U Ellipsometer\relax }{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Phase Identification}{10}{section.4.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}X-Ray Diffraction}{10}{subsection.4.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Grazing Incidence X-Ray Diffraction}{10}{subsection.4.4.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Chemical Analysis}{10}{section.4.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}Thermogravimetric Analysis}{10}{subsection.4.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}Differential Scanning Calorimetry}{10}{subsection.4.5.2}}
+\@setckpt{./chapters/characterization}{
+\setcounter{page}{11}
+\setcounter{equation}{4}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{4}
+\setcounter{section}{5}
+\setcounter{subsection}{2}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{2}
+\setcounter{table}{0}
+\setcounter{ContinuedFloat}{0}
+\setcounter{subfigure}{0}
+\setcounter{subtable}{0}
+\setcounter{parentequation}{2}
+\setcounter{chemmacros_save_reaction}{0}
+\setcounter{reaction}{2}
+\setcounter{r@tfl@t}{0}
+\setcounter{lips@count}{0}
+\setcounter{linenumber}{251}
+\setcounter{LN@truepage}{30}
+\setcounter{Item}{0}
+\setcounter{Hfootnote}{0}
+\setcounter{bookmark@seq@number}{32}
+\setcounter{LT@tables}{0}
+\setcounter{LT@chunks}{0}
+\setcounter{section@level}{2}
+}

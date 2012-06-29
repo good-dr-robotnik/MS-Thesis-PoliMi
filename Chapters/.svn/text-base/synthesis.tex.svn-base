@@ -1,0 +1,92 @@
+\chapter{Synthesis Methods}
+\label{chap:synthesis}
+\thispagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Synthesis of perovskite oxides has been demonstrated using a wide range of techniques. These range from solution-based processing methods (sol-gel approach), to physical vapor methods (molecular beam epitaxy and pulsed laser deposition), and gas phase chemical methods (chemical vapor deposition and atomic layer deposition). This review will briefly discuss sol-gel, physical vapor deposition, as well as CVD methodology, but will focus in more depth on films deposited via ALD. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Sol-Gel Processing}
+
+\lipsum
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Physical Vapor Deposition}
+
+\lipsum
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Metallorganic Chemical Vapor Deposition}
+
+\lipsum
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Atomic Layer Deposition}
+	
+Atomic Layer Deposition (ALD) is a modification on standard CVD processes, with a few major differences. The defining aspect of an ALD process is the separation of the overall reaction into two steps: first the precursor is allowed to react with the substrate surface (see reaction~\ref{chem:TMA1}), excess reactant is purged from the chamber and an oxidizer is introduced to complete the reaction (see reaction~\ref{chem:TMA2}). These reactions show a very simple ALD reaction between trimethylaluminum (TMA) and water. 
+
+\begin{reactions}
+	Al(CH3)3 + M-OH_{surf} &-> M-O-Al(CH3)2_{\,surf} + CH4 \label{chem:TMA1}%
+		\AddRxnDesc{TMA: Precursor-Surface Site Reaction}%
+		\\
+	M-O-Al(CH3)2_{\,surf} + 2H2O &-> M-O-Al(OH)2_{\,surf} + 2CH4 \label{chem:TMA2}%
+		\AddRxnDesc{TMA: Precursor Ligand Oxidation \& Site Regeneration}
+\end{reactions}
+
+
+In this example, it is seen that the first stage allows the TMA to react with the hydrated substrate surface to form part of a layer of alumina (\ce{Al2O3}), liberating a molecule of methane as a byproduct. In the next step, the remaining ligands are stripped away from the bound TMA molecule and replacing them with hydroxy groups. This returns the system to the initial state --- where the surface is presenting sites available to react with more TMA --- and the cycle is completed. 
+
+Having only surface reactions be permitted, as opposed to CVD where gas-phase interactions dominate, affords ALD a number of unique characteristics. One of these is the concept of the ``self-limiting'' growth mode. This behavior arises from the limited number of available reaction sites; when all of these have either been reacted with or made unavailable by a blocking mechanism such as stearic hindrance from other local chemisorbed precursor the reaction can no longer proceed. At this point, additional available precursor is not going to be utilized, and instead will be removed and treated as waste material. The system is then evacuated, and a inert purge gas such as dry nitrogen or argon (at UHP grade) is flowed through the reactor. The purge gas serves both to push any remaining gases out of the reactor as well as to help desorb physisorbed species from the surface. \reword{If these are allowed to remain adsorbed they would react with the oxidant and negate the surface-limited aspects of ALD.} The system would then again be evacuated, and the oxidant introduced and then pumped away to complete the cycle. 
+
+In the implementation of most ALD systems, the purge gas is also used as a carrier gas for the precursors. Thus a constant flow of gas is passed through the system, instead of having it occasionally fully evacuated, and the precursor is able to be delivered from its source to the reactor more effectively. For some precursor compounds, in particular those with a low vapor pressure, having carrier-assisted transportation can greatly improve the behavior of the system. 
+
+Since each deposition cycle is limited to a theoretical maximum of one monolayer of material, and in practice a much lower coverage per cycle is attained, it is only possible to deposit a very small thickness. Generally per cycle growth rates are on the order of a few angstroms, with the rate being nearly invariable during most of the deposition. This gives the second defining characteristic of ALD: very high (\AA\ level) thickness resolution. The downside of this aspect is that growths are generally much slower than other types of depositions; ALD is generally slower by an order of magnitude or more than a similar CVD process, as an example. This has proved invaluable in many processes where high precision is critical, such as electronics manufacturing. Intel, for example, uses ALD to deposit extremely thin layers of a high-$\kappa$ dielectric (such as hafnia, \ce{HfO2}) for use as the gate oxide in its transistors, with layer thickness generally less than 2nm. 
+
+
+
+%
+%\begin{subreactions}
+%	\label{chem:2TMA}
+%	\begin{reactions}
+%		Al(CH3)3 + M-OH_{surf} &-> M-O-Al(CH3)2_{\,surf} + CH4 \label{chem:2TMA1} \\
+%		M-O-Al(CH3)2_{\,surf} + 2H2O &-> M-O-Al(OH)2_{\,surf} + 2CH4 \label{chem:2TMA2}
+%	\end{reactions}
+%\end{subreactions}
+%
+%\begin{subreactions}
+%\newcommand*{\thesubequation}{(\reactiontag.\alph{equation})}
+%\label{chem:TMA}
+%\begin{align}
+%	\cee{Al(CH3)3 + M-OH_{surface} &-> M-O-Al(CH3)2_{\ surf} + CH4}%
+%		\label{chem:TMA1}
+%		\\
+%	\cee{M-O-Al(CH3)2_{\ surf} + 2H2O &-> M-O-Al(OH)2_{\ surf} + 2CH4}%
+%		\label{chem:TMA2}
+%\end{align}
+%\end{subreactions}
+
+
+
+\lipsum
+
+
+
+
+
+
+

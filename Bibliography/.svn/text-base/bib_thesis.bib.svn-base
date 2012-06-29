@@ -1,0 +1,39 @@
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
+
+
+%% Created for Brian at 2012-06-27 10:58:06 +0200 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+
+
+@misc{woollam-web,
+	Author = {{J. A. Woollam Co., Inc.}},
+	Date-Added = {2012-06-27 08:43:50 +0000},
+	Date-Modified = {2012-06-27 08:57:56 +0000},
+	Howpublished = {{\url{http://www.jawoollam.com/m2000_home.html}}},
+	Read = {1},
+	Title = {M-2000 Ellipsometer},
+	Bdsk-Url-1 = {http://www.jawoollam.com/m2000_home.html}}
+
+@article{Jellison96,
+	Author = {G. E. Jellison, Jr. and F. A. Modine},
+	Doi = {10.1063/1.118064},
+	Journal = {Applied Physics Letters},
+	Keywords = {AMORPHOUS STATE; OPTICAL PROPERTIES; SEMICONDUCTOR MATERIALS; DIELECTRIC TENSOR; KRAMERS - KRONIG CORRELATION; SILICON; SILICON OXIDES; ARSENIC SULFIDES; SILICON NITRIDES; AMORPHOUS SEMICONDUCTORS; DIELECTRIC FUNCTION},
+	Number = {3},
+	Pages = {371-373},
+	Publisher = {AIP},
+	Title = {Parameterization of the optical functions of amorphous materials in the interband region},
+	Url = {http://link.aip.org/link/?APL/69/371/1},
+	Volume = {69},
+	Year = {1996},
+	Bdsk-Url-1 = {http://link.aip.org/link/?APL/69/371/1},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1063/1.118064}}
+
+@manual{WVASE-manual,
+	Author = {{J. A. Woollam Co., Inc.}},
+	Title = {Guide to Using WVASE32},
+	Year = {2009}}

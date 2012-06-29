@@ -1,0 +1,65 @@
+\relax 
+\citation{WVASE-manual}
+\citation{WVASE-manual}
+\citation{WVASE-manual}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Data Collection and Analysis}{13}{chapter.6}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:DataAnalysis}{{6}{13}{Data Collection and Analysis\relax }{chapter.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}VASE and Modeling}{13}{section.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}Data Collection}{13}{subsection.6.1.1}}
+\citation{WVASE-manual}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.2}Model Definition}{14}{subsection.6.1.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Graphical Schematic of VASE Model}}{15}{figure.caption.11}}
+\newlabel{fig:Si(100)-model}{{6.1}{15}{Graphical Schematic of VASE Model\relax }{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.3}Analysis Procedure}{15}{subsection.6.1.3}}
+\newlabel{eq:cauchy}{{6.1}{15}{Analysis Procedure\relax }{equation.6.1.1}{}}
+\citation{WVASE-manual,Jellison96}
+\citation{Jellison96}
+\newlabel{eq:dielectric}{{6.2}{16}{Analysis Procedure\relax }{equation.6.1.2}{}}
+\newlabel{eq:TaucLorentz}{{6.3}{16}{Analysis Procedure\relax }{equation.6.1.3}{}}
+\newlabel{eq:TaucLorentz-1}{{6.3a}{16}{Analysis Procedure\relax }{equation.6.1.3a}{}}
+\citation{harjuoja_2006}
+\citation{harjuoja_2006}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Composition Analysis}{17}{section.6.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Preferred Phase vs. Stoichiometric Ratio}}{17}{figure.caption.13}}
+\newlabel{fig:PTO-phase}{{6.2}{17}{Preferred Phase vs. Stoichiometric Ratio\relax }{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}Energy-Dispersive X-Ray Spectroscopy}{18}{subsection.6.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}X-Ray Fluorescence Spectroscopy}{18}{subsection.6.2.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}X-Ray Diffraction}{18}{section.6.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}Grazing Incidence XRD}{18}{subsection.6.3.1}}
+\@setckpt{./chapters/dataAnalysis}{
+\setcounter{page}{19}
+\setcounter{equation}{3}
+\setcounter{enumi}{4}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{6}
+\setcounter{section}{3}
+\setcounter{subsection}{1}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{2}
+\setcounter{table}{0}
+\setcounter{ContinuedFloat}{0}
+\setcounter{subfigure}{0}
+\setcounter{subtable}{0}
+\setcounter{parentequation}{3}
+\setcounter{chemmacros_save_reaction}{0}
+\setcounter{reaction}{2}
+\setcounter{r@tfl@t}{0}
+\setcounter{lips@count}{0}
+\setcounter{linenumber}{408}
+\setcounter{LN@truepage}{38}
+\setcounter{Item}{7}
+\setcounter{Hfootnote}{0}
+\setcounter{bookmark@seq@number}{55}
+\setcounter{LT@tables}{0}
+\setcounter{LT@chunks}{0}
+\setcounter{section@level}{2}
+}
