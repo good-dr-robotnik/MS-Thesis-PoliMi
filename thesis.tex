@@ -49,7 +49,7 @@
 \usepackage[nodayofweek]{datetime}	% Allows for proper determination of date
 \usepackage{etoolbox} 	% Unimportant for end user. 
 \usepackage{lipsum}	% Allows for automatic creation of filler text. 
-\usepackage[margin=2.5cm,a4paper]{geometry}	% Defines page layout geometry
+\usepackage[margin=3.5cm,a4paper]{geometry}	% Defines page layout geometry
 \usepackage{lscape}	% Allows pages to be defined as landscape (environment)
 \usepackage{indentfirst}	% Forces an indent on all paragraphs, including first paragraphs. 
 \usepackage{empheq}	% Used to add braces to groups of equations
@@ -90,25 +90,6 @@
 \widowpenalty=10000
 \clubpenalty=10000
 
-%\makeatletter
-%\def\@chapter[#1]#2{\ifnum \c@secnumdepth >\m@ne
-%  \refstepcounter{chapter}%
-%  \typeout{\@chapapp\space\thechapter.}%
-%  \addcontentsline{toc}{chapter}%
-%    {\protect\numberline{\thechapter}\string\hypertarget{chap\thechapter}{#1}}%
-%\else
-%  \addcontentsline{toc}{chapter}{#1}%
-%\fi
-%\chaptermark{#1}%
-%\addtocontents{lof}{\protect\addvspace{10\p@}}%
-%\addtocontents{lot}{\protect\addvspace{10\p@}}%
-%\if@twocolumn
-%  \@topnewpage[\@makechapterhead{#2}]%
-%\else
-%  \@makechapterhead{#2}%
-%  \@afterheading
-%\fi}
-%\makeatother
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -125,22 +106,15 @@
 \pagestyle{empty} % Sets pages to have no header/footer. Will be changed later in the document. 
 
 
-
-
-%\makeatletter
-%  \newcommand\reaction@[1]{\begin{equation}\ce{#1}\end{equation}}
-%  \newcommand\reaction@nonumber[1]%
-%    {\begin{equation*}\ce{#1}\end{equation*}}
-%  \newcommand\reaction{\@ifstar{\reaction@nonumber}{\reaction@}}
-%\makeatother
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%% LAYOUT GEOMETRY ADJUSTMENTS  %%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\addtolength{\oddsidemargin} {-0.4 cm} 	% Shrinks the side margins slightly.
 %\addtolength{\evensidemargin} {-0.4 cm}	% Shrinks the side margins slightly. 
+
 \setlength{\headheight}{26pt} 	% Changes the size of the header (the console will complain if it's too small).
+
 \linespread{1.25} 	% Changes line spacing
 
 
@@ -149,41 +123,7 @@
 %%%%%%%%%%%  CHEMICAL EQUATION FORMATTING  %%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\makeatletter
-%%\newcounter{reaction}
-%%%% >> for article <<
-%%\renewcommand\thereaction{C\,\arabic{reaction}}
-%%%% << for article <<
-%%%% >> for report and book >>
-%\renewcommand\thereaction{R\,\thechapter.\arabic{reaction}}
-%\@addtoreset{reaction}{chapter}
-%%%% << for report and book <<
-%\newcommand\reactiontag{\refstepcounter{reaction}\tag{\thereaction}}
-%\newcommand\subreactiontag{\refstepcounter{reaction}\tag{\thereaction.\thesubequation}}
-%\newcommand\reaction@[2][]{\begin{equation}\ce{#2}%
-%  \ifx\@empty#1\@empty\else\label{#1}\fi%
-%  \reactiontag\end{equation}}
-%\newcommand\reaction@nonumber[1]{\begin{equation*}\ce{#1}\end{equation*}}
-%\renewcommand\reaction{\@ifstar{\reaction@nonumber}{\reaction@}}
-%\makeatother
-%
-%\newcommand{\thealignedreaction}{C\,\thechapter.\arabic{equation}}
-%
-%\makeatletter
-%\newenvironment{reactionalign}{%
-%	\mathchardef\c@mainequation\c@equation
-%	\protected@edef\themainequation{\theequation}%
-%	\let\theequation\thealignedreaction
-%	\global\c@equation\c@reaction
-%	}%
-%	{
-%	\global\c@equation\c@mainequation
-%	\global\@ignoretrue
-%	}
-%\makeatother
-%
-
-%\renewtagform{reaction}[R ]{(}{)}
+\renewtagform{reaction}[R ]{(}{)}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
