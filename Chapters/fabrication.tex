@@ -61,11 +61,23 @@ If the samples are stored, it is recommended to again clean the samples in the s
 
 \section{Deposition Parameters}
 
-\lipsum
+There are four main parameters that can affect the behavior of an ALD deposition. 
 
 %%%%%%%%%%%%%%%
 
 \subsection{Growth Temperature}
+
+The temperature of the growth chamber has a strong effect on reaction behavior. ALD reactions are sensitive to temperature, and will only proceed properly within a certain range known as the `ALD window.' Outside of this range, the reaction enters one of a number of different regimes; these are determined by comparing the growth rate of the deposition to that of a reaction in the self-limiting saturated ``ALD mode.'' 
+
+If the growth temperature is less than the lower bound of the ALD window, the two regimes are condensation limited and activation energy limited. Condensation limited growth occurs when the substrate temperature is low enough that precursor condenses onto the surface without reacting with the presented sites. This causes higher than expected growth rates, and a lack of self-limiting behavior. If the reaction instead proceeds into the activation energy limited regime, molecules of precursor lack sufficient energy to react with the surface. This is characterized by lower deposition rates. 
+
+Conversely, if the reactor temperature is excessive the reaction again become anomalous. Decomposition limited growth, characterized by excessive deposition, is a result of thermal cracking of the precursor materials. This reaction is not limited to the surface, and accounts for the extra material being deposited. Lower deposition rates indicate that the temperature is sufficient to cause desorption of previously-reacted material from the sample. 
+
+For an ALD run to be successful, the acceptable temperature window for all of the reactions should overlap in some temperature range. This can become difficult with reactions requiring multiple metal precursors (e.g. \PTO, a combination of \ce{TiO2} and \ce{PbO}), as these can have widely varying ALD windows for their respective reactions. 
+
+%%%%%%%%%%%%%%%
+
+\subsection{Precursor Dosage}
 
 \lipsum
 
