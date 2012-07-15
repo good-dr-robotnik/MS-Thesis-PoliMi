@@ -38,7 +38,7 @@ Synthesis of perovskite oxides has been demonstrated using a wide range of techn
 
 \section{Atomic Layer Deposition}
 	
-Atomic Layer Deposition (ALD) is a modification on standard CVD processes, with a few major differences. The defining aspect of an ALD process is the separation of the overall reaction into two steps: first the precursor is allowed to react with the substrate surface (see reaction~\ref{chem:TMA1}), excess reactant is purged from the chamber and an oxidizer is introduced to complete the reaction (see reaction~\ref{chem:TMA2}). These reactions show a very simple ALD reaction between trimethylaluminum (TMA) and water. 
+Atomic Layer Deposition (ALD) is a modification on standard CVD processes, with a few major differences. The defining aspect of an ALD process is the separation of the overall reaction into two steps: first the precursor is allowed to react with the substrate surface (see reaction~\ref{chem:TMA1}), excess reactant is purged from the chamber and an oxidizer is introduced to complete the reaction (see reaction~\ref{chem:TMA2}). These reactions show a very simple ALD reaction between trimethylaluminum (TMA, \ce{Al(CH3)3}) and water. 
 
 \begin{reactions}
 	Al(CH3)3 + M-OH_{surf} &-> M-O-Al(CH3)2_{\,surf} + CH4 \label{chem:TMA1}%
@@ -49,7 +49,44 @@ Atomic Layer Deposition (ALD) is a modification on standard CVD processes, with 
 \end{reactions}
 
 
-In this example, it is seen that the first stage allows the TMA to react with the hydrated substrate surface to form part of a layer of alumina (\ce{Al2O3}), liberating a molecule of methane as a byproduct. In the next step, the remaining ligands are stripped away from the bound TMA molecule and replacing them with hydroxy groups. This returns the system to the initial state --- where the surface is presenting sites available to react with more TMA --- and the cycle is completed. 
+In this example, it is seen that the first stage allows the TMA to react with the hydrated substrate surface to form part of a layer of alumina (\ce{Al2O3}), liberating a molecule of methane as a byproduct. In the next step, the remaining ligands are stripped away from the bound TMA molecule and replacing them with hydroxy groups. This returns the system to the initial state --- where the surface is presenting sites available to react with more TMA --- and the cycle is completed. A graphical example of this process can be found in figure~\ref{fig:TMA-illustration}.
+
+
+\begin{figure}[htbp]
+   \centering
+   \subfloat[][Precursor injection]{%
+%   	\label{fig:Q50-image}%
+	\includegraphics[width=0.45\linewidth]{./figures/synthesis/TMA1}%
+	} 
+	\hspace{6pt}
+  \subfloat[][Precursor reaction]{%
+%   	\label{fig:Q50-image}%
+	\includegraphics[width=0.45\linewidth]{./figures/synthesis/TMA2}%
+	} \\
+  \subfloat[][Reactor Purging]{%
+%   	\label{fig:Q50-image}%
+	\includegraphics[width=0.45\linewidth]{./figures/synthesis/TMA3}%
+	}  
+	\hspace{6pt}	
+  \subfloat[][Oxidant Injection]{%
+%   	\label{fig:Q2000-image}%
+	\includegraphics[width=0.45\linewidth]{./figures/synthesis/TMA4}%
+	} \\
+  \subfloat[][Oxidation Reaction]{%
+%   	\label{fig:Q2000-image}%
+	\includegraphics[width=0.45\linewidth]{./figures/synthesis/TMA5}%
+	} 
+	\hspace{6pt} 
+  \subfloat[][Completed Cycle, Regenerated Surface]{%
+%   	\label{fig:Q2000-image}%
+	\includegraphics[width=0.45\linewidth]{./figures/synthesis/TMA6}%
+	} 	
+   \caption[Illustration of Example ALD Cycle]%
+   		{Example schematic of the process of an ALD deposition cycle. This example\\%
+		illustrates the reaction of TMA and water to form alumina (\ce{Al2O3}). \\%
+		{\tiny Graphic courtesy of Cambridge NanoTech, inc.}}
+   \label{fig:TMA-illustration}
+\end{figure}
 
 Having only surface reactions be permitted, as opposed to CVD where gas-phase interactions dominate, affords ALD a number of unique characteristics. One of these is the concept of the ``self-limiting'' growth mode. This behavior arises from the limited number of available reaction sites; when all of these have either been reacted with or made unavailable by a blocking mechanism such as stearic hindrance from other local chemisorbed precursor the reaction can no longer proceed. At this point, additional available precursor is not going to be utilized, and instead will be removed and treated as waste material. The system is then evacuated, and a inert purge gas such as dry nitrogen or argon (at UHP grade) is flowed through the reactor. The purge gas serves both to push any remaining gases out of the reactor as well as to help desorb physisorbed species from the surface. \reword{If these are allowed to remain adsorbed they would react with the oxidant and negate the surface-limited aspects of ALD.} The system would then again be evacuated, and the oxidant introduced and then pumped away to complete the cycle. 
 
