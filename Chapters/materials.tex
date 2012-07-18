@@ -11,9 +11,9 @@
 
 Lead titanate (\PTO{}, PTO) naturally orders into the tetragonal perovskite crystal structure at room temperature (figure~\ref{fig:PTO-crystal}). The structure can be affected by compositional changes, temperature, or strain (primarily in thin-film systems), allowing a transition to a cubic phase. In the perovskite crystal structure, the central cation (\TiIon{} in the case of \PTO{}) is encapsulated in a octahedral cage of anions (\OIon{}), with the remaining cations (\PbIon{}) situated in the eight corners of the unit cell. if the material was doped (as in a mixed solid-solution), some of the cations would be replaced with the dopant ions, for example \ZrIon{} would be randomly distributed in  \TiIon{} sites in the \PZT{} (PZT) system.
 
-\begin{figure}[htbp]
+\begin{figure}[htb]
    \begin{center}
-   \includegraphics[scale=1.25]{./figures/materials/pbtio3-crystal.pdf} % requires the graphicx package
+   \includegraphics[width=0.4\textwidth]{./figures/materials/pbtio3-crystal.pdf} 
    \caption[Crystal structure of \PTO{}]{Tetragonal perovskite structure of \PTO{}. \\Grey, red, and blue spheres refer to \PbIon{}, %
    		\TiIon{}, or \OIon{}, respectively}
    \label{fig:PTO-crystal}
@@ -33,9 +33,75 @@ The transition from tetragonal to cubic perovskite is highly dependent on temper
 
 \section{Ferroelectricity}
 
-\lipsum
+Ferroelectricity is the capability of a material to exhibit spontaneous electric polarization that requires external influence, such as an applied electric field, to be reversed. This is different from paraelectric (or even dielectric) materials, where there is no polarization without external field being applied. This can be seen in a plot of energy vs. polarization (fig.~\ref{fig:EvP}) for the two types of materials. In a ferroelectric material, the energy minima are found at non-zero levels of polarization. 
+
+\begin{figure}[tb]
+   \centering
+   \subfloat[][Paraelectric]{%
+   	\label{fig:EvP-PE}%
+	\includegraphics[width=0.45\linewidth]{./figures/materials/EvP-FE2}%
+	} 	
+   \subfloat[][Ferroelectric]{%
+   	\label{fig:EvP-FE}%
+	\includegraphics[width=0.45\linewidth]{./figures/materials/EvP-FE1}%
+	} 	
+   \caption[Energy vs. Polarization Plots for FE and PE Materials]%
+   		{Example plots of the energy required to polarize a material. Ferroelectric materials (b) have %
+		non-zero polarization at the energy minima. Above \Tc{} all ferroelectric materials transition %
+		to a paraelectic phase (a).}
+   \label{fig:EvP}
+\end{figure}
+
+One of the most important effects of ferroelectric behavior is the exhibition of hysteresis in the polarization state of the material. \reword{Kinda shitty explanations...} Because additional energy is required to make the transition from one state to another, the original state endures for some amount of opposing field (see fig.~\ref{fig:PvElec-FE}).
+
+\begin{figure}[tb]
+   \centering
+   \subfloat[][Paraelectric]{%
+   	\label{fig:PvElec-PE}%
+	\includegraphics[width=0.4\linewidth]{./figures/materials/PvElec-PE}%
+	} 
+   \hspace{0.5cm}	
+   \subfloat[][Ferroelectric]{%
+   	\label{fig:PvElec-FE}%
+	\includegraphics[width=0.4\linewidth]{./figures/materials/PvElec-FE}%
+	} 	
+   \caption[Polarization vs. Applied Field Plots for FE and PE Materials]%
+   		{Example plots of the energy required to polarize a material. Ferroelectric materials (a) have %
+		non-zero polarization at the energy minima. Above \Tc{} all ferroelectric materials transition %
+		to a paraelectic phase (b).}
+   \label{fig:PvElec}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
