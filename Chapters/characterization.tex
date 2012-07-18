@@ -41,7 +41,7 @@ Since the energies of the emitted photons are very specific to each element, the
 
 One of the downsides of EDXS is that the interaction volume of electrons is much larger deeper into the sample, so the surface sensitivity of the technique is smaller than with some other techniques. 
 
-\begin{figure}[htbp]
+\begin{figure}[tb]
    \centering
    \includegraphics[width=0.66\linewidth]{./figures/characterization/EDXS-scheme} 
    \caption[Illustration of EDXS principle]%
@@ -81,7 +81,7 @@ XRFS often has a lower noise floor than EDXS, allowing smaller signals to be mor
 
 Ellipsometry is a powerful non-destructive optical technique that allows for the determination of a large number of properties of complex thin film structures. The basic tenet of ellipsometry relies on the analysis of the change in polarization state of a reflected light beam after interaction with the sample. The incident beam is generally linearly polarized, but upon reflection becomes elliptically polarized due to a phase shift in the components of the beam in the s- and p-plane, as well as a change in their relative amplitudes. The phase shift is correlated to the ellipsometric parameter $\Delta$, while the amplitude change is given by $\tan\Psi$ ($\Psi$ is the angle between the s-plane and the major axis of the ellipse). The last major parameter is the incident angle, denoted by $\Phi$. A schematic diagram illustrating these parameters can be seen in figure~\ref{fig:ellipsometry}. 
 
-\begin{figure}[htbp]
+\begin{figure}[tb]
    \centering
    \includegraphics[width=\linewidth]{./figures/characterization/ellipsometryDiagram_simple} 
    \caption[Ellipsometric Beam Path and Modeling Parameters]{Schematic of the beam path during an %
@@ -100,8 +100,11 @@ From these parameters, one can directly determine the ratio between the reflecta
 \begin{subequations}
 \label{eq:fresnel}
 \begin{align}
-	r_{p} &= \frac{\tilde{n}_{1}\sqrt{1- \left(\frac{\tilde{n}_{1}}{\tilde{n}_{2}}\sin\Phi\right)} - \tilde{n}_{2}\cos\Phi}{\tilde{n}_{1}\sqrt{1- \left(\frac{\tilde{n}_{1}}{\tilde{n}_{2}}\sin\Phi\right)} + \tilde{n}_{2}\cos\Phi} \\
-        	r_{s} &= \frac{\tilde{n}_{1}\cos\Phi - \tilde{n}_{2}\sqrt{1- \left(\frac{\tilde{n}_{1}}{n_{2}}\sin\Phi\right)}}{\tilde{n}_{1}\cos\Phi + \tilde{n}_{2}\sqrt{1- \left(\frac{\tilde{n}_{1}}{\tilde{n}_{2}}\sin\Phi\right)}}
+	r_{p} &= \frac{\tilde{n}_{1}\sqrt{1- \left(\frac{\tilde{n}_{1}}{\tilde{n}_{2}}\sin\Phi\right)} - \tilde{n}_{2}%
+			\cos\Phi}{\tilde{n}_{1}\sqrt{1- \left(\frac{\tilde{n}_{1}}{\tilde{n}_{2}}\sin\Phi\right)} + %
+			\tilde{n}_{2}\cos\Phi} \\
+        	r_{s} &= \frac{\tilde{n}_{1}\cos\Phi - \tilde{n}_{2}\sqrt{1- \left(\frac{\tilde{n}_{1}}{n_{2}}\sin\Phi\right)}}%
+			{\tilde{n}_{1}\cos\Phi + \tilde{n}_{2}\sqrt{1- \left(\frac{\tilde{n}_{1}}{\tilde{n}_{2}}\sin\Phi\right)}}
 \end{align}
 \end{subequations}
 
@@ -125,7 +128,7 @@ Variable angle spectroscopic ellipsometry (VASE) is one of these variants. Spect
 
 During this project, a VASE M-2000U system (figure~\ref{fig:M2000_image}) built by J.A. Woollam, inc. was used to collect all of the ellipsometric data. In addition, data analysis was performed using the WVASE32 package also provided by J.A. Woollam. The system utilizes a rotating compensator and a CCD detector to greatly decrease data collection time by collecting data across the entire spectrum simultaneously.  More information on this system is available on the J.A. Woollam, inc. webpage.\cite{woollam-web}
 
-\begin{figure}[htbp]
+\begin{figure}[tb]
    \centering
    \includegraphics[width=0.66\linewidth]{./figures/characterization/M2000_ellipsometer_image.png} 
    \caption[J.A. Woollam M-2000U Ellipsometer]%
@@ -169,7 +172,7 @@ At its core, TGA is a measurement of mass loss as a function of temperature or t
 
 This technique was used to evaluate various precursor candidates for the lead oxide half of the \PTO deposition procedure. The instrument used was a Q50 TGA device (fig.~\ref{fig:Q50-image}).  A detailed discussion of TGA procedures and the investigated chemicals can be found in subsequent chapters (\ref{chap:TGA-methods} and \ref{chap:Results-Thermal}). 
 
-\begin{figure}[htbp]
+\begin{figure}[tb]
    \centering
    \subfloat[Q50 TGA][Q50 TGA]{%
    	\label{fig:Q50-image}%
