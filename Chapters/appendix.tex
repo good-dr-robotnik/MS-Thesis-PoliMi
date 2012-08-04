@@ -17,7 +17,7 @@
 
 \ce{Pb(HFAc)2} %Not correct name
 
-\ce{HF}
+Buffered \ce{HF}
 
 \ce{N2}
 
@@ -35,18 +35,135 @@ Acetone
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{landscape}
 \section{List of Samples}
 \label{sup:LoSamples}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{table}[htdp]\tiny
+%\begin{center}
+%\begin{longtable}{|>{\centering}m{1.6cm}|>{\centering}m{1.5cm}|>{\centering}m{1.2cm}|>{\centering}%
+%	m{1.2cm}|>{\centering}m{0.9cm}|>{\centering}m{1.0cm}|>{\centering}m{0.9cm}|>{\centering}%
+%	m{0.9cm}|>{\centering}m{0.9cm}|>{\centering}m{0.7cm}|>{\centering}m{6cm}|}
+%	%
+%	\hline
+%	\textbf{Temperature (\degC{})} & \textbf{Pb:Ti  Deposition Ratio} & \textbf{Run Number} &%
+%	\textbf{Substrate Type} & \textbf{Super-Cycles} &\textbf{Total Cycles} & \textbf{Anneal Type} &%
+%	\textbf{Anneal Temp (\degC{})} & \textbf{Anneal Time} & \textbf{XRD} & \textbf{Notes}%
+%	\endhead
+%	\hline\hline
+%	0&a&b&c&d&e&f&g&h&i&\\ \hline
+%	&&&&&&&&&&\\ \hline
+%	&&&&&&&&&&\\ \hline
+%	&&&&&&&&&&\\ \hline
+%	&&&&&&&&&&\\ \hline
+%	&&&&&&&&&&\\ \hline
+%	&&&&&&&&&&\\ \hline
+%	&&&&&&&&&&\\ \hline
+%	%
+%\end{longtable}
+%\caption[List of Samples]{A list of samples used during the course of this work}
+%\end{center}
+%\label{default}
+%\end{table}%
 
+{\tiny
+\begin{longtable}{|>{\centering}m{1.6cm}|>{\centering}m{1.5cm}|>{\centering}m{1.2cm}|>{\centering}m{1.2cm}|>{\centering}m{0.9cm}|>{\centering}m{1.0cm}|>{\centering}m{0.9cm}|>{\centering}m{0.9cm}|>{\centering}m{0.9cm}|>{\centering}m{0.7cm}|m{6cm}|}
+	\caption[List of Samples]{A list of samples used during the course of this project. \label{tbl:LoSamples}}\\
+	\hline
+	\textbf{Temperature (\degC{})} & \textbf{Pb:Ti  Deposition Ratio} & \textbf{Run Number} & \textbf{Substrate Type} & \textbf{Super-Cycles} & \textbf{Total Cycles} & \textbf{Anneal Type} & \textbf{Anneal Temp (\degC{})} & \textbf{Anneal Time} & \textbf{XRD} & \textbf{Notes}\\ \hline \hline \endfirsthead%
+	\caption[]{A list of samples used during the course of this project. \label{tbl:LoSamples}}\\
+	\hline
+	\textbf{Temperature (\degC{})} & \textbf{Pb:Ti  Deposition Ratio} & \textbf{Run Number} & \textbf{Substrate Type} & \textbf{Super-Cycles} & \textbf{Total Cycles} & \textbf{Anneal Type} & \textbf{Anneal Temp (\degC{})} & \textbf{Anneal Time} & \textbf{XRD} & \textbf{Notes}\\ \hline \hline \endhead%
+	200 & 1:1 & 3 & Si & 250 & 500 &  &  &  & N & Blah  \\ \hline
+	200 & 1:2 & 2 & Si & 250 & 750 &  &  &  & N &  \\ \hline
+	\multirow{2}{*}{200} & \multirow{2}{*}{3:1} & \multirow{2}{*}{30} & Si & \multirow{2}{*}{160} & \multirow{2}{*}{640} &  &  &  & N & \multirow{2}{*}{} \\  \cdashline{4- 4}\cdashline{7- 10}
+	& & & Pt & &  &  &  &  & N &  \\ \hline 
+	\multirow{3}{*}{250} & \multirow{3}{*}{1:1} & \multirow{3}{*}{0} & Si & \multirow{3}{*}{625} & \multirow{3}{*}{1250} & Oven -- Amb & 650 & 2h & Y & Green sample, no apparent change \\* \cdashline{4- 4}\cdashline{7- 11}
+	  &   &   & Si &   &   & Oven -- Amb & 900 & 2h & Y & Sample turned a purplish blue color, still shiny but not as shiny as untreated \\* \cdashline{4- 4}\cdashline{7- 11}
+	  &   &   & Si &   &   & RTA & 900 & 10m & N & Small chip, no longer shiny, odd structures present after annealing (via opt. micro), appears to have formed nano-rods after anneal (see SEM images).  Made more samples in RTA at 600, 700, 800, 900\degC{}, similar results on all but 600\degC{} test \\ \hline 
+	250 & 1:1 & 1 & Si & 475 & 950 &  &  &  & N &  \\ \hline 
+	250 & 1:2 & 6 & Si & 250 & 750 &  &  &  & N &  \\ \hline 
+	250 & 3:1 & 13 & Si & 250 & 1000 &  &  &  & N & Tried 60s between Pb pulses, needs a little more. Sample appeared uniform except for one spot (effect of tape?). Yellow spot has different thickness (23.5nm) and different osc. parameters. \\ \hline 
+	250 & 3:1 & 16 & Si & 150 & 600 & RTA & 650 & 1m & N &  \\ \hline 
+	\multirow{2}{*}{250} & \multirow{2}{*}{3:1} & \multirow{2}{*}{19} & Si & \multirow{2}{*}{100} & \multirow{2}{*}{400} &  &  &  & N & Replaced precursor prior to this run. \\* \cdashline{4- 4}\cdashline{7- 11}
+	  &   &   & Pt &   &   &  &  &  & N &  \\ \hline 
+	\multirow{2}{*}{250} & \multirow{2}{*}{3:1} & \multirow{2}{*}{20} & Si & \multirow{2}{*}{200} & \multirow{2}{*}{800} &  &  &  & N & Runs appear to be growing well.  Spectacular coloration on the reactor surface where platinum was deposited. \\* \cdashline{4- 4}\cdashline{7- 11}
+	  &   &   & Pt &   &   & Fast Oven & 650 & 1m & Y &  \\ \hline 
+	\multirow{2}{*}{250} & \multirow{2}{*}{3:1} & \multirow{2}{*}{21} & Si & \multirow{2}{*}{150} & \multirow{2}{*}{600} &  &  &  & N &  \\* \cdashline{4- 4}\cdashline{7- 11}
+	  &   &   & Pt &   &   & Fast Oven & 650 & 1m & N & Discolored, not homogeneous across sample... \\ \hline 
+	\multirow{2}{*}{250} & \multirow{2}{*}{3:1} & \multirow{2}{*}{22} & Si & \multirow{2}{*}{150} & \multirow{2}{*}{600} &  &  &  & N &  \\* \cdashline{4- 4}\cdashline{7- 10}
+	  &   &   & Pt &   &   & Fast oven & 650 & 1m & Y &  \\ \hline 
+	  \multicolumn{11}{c}{}\\
+	  \multicolumn{11}{c}{}\\
+	  \multicolumn{11}{c}{}\\
+	\multirow{2}{*}{250} & \multirow{2}{*}{3:1} & \multirow{2}{*}{23} & Si & \multirow{2}{*}{200} & \multirow{2}{*}{800} &  &  &  & N &  \\* \cdashline{4- 4}\cdashline{7- 10}
+	  &   &   & Pt &   &   & Fast oven & 650 & 1m & Y &  \\ \hline
+	\multirow{2}{*}{250} & \multirow{2}{*}{3:1} & \multirow{2}{*}{24} & Si & \multirow{2}{*}{200} & \multirow{2}{*}{800} &  &  &  & N &   \\* \cdashline{4- 4}\cdashline{7- 10}
+	  &   &   & Pt &   &   &  &  &  & N &   \\ \hline 
+	\multirow{2}{*}{250} & \multirow{2}{*}{3:1} & \multirow{2}{*}{25} & Si & \multirow{2}{*}{60} & \multirow{2}{*}{240} &  &  &  & N &   \\* \cdashline{4- 4}\cdashline{7- 10}
+	  &   &   & Pt &   &   &  &  &  & N &   \\ \hline 
+	\multirow{2}{*}{250} & \multirow{2}{*}{2:1} & \multirow{2}{*}{26} & Si & \multirow{2}{*}{80} & \multirow{2}{*}{240} &  &  &  & N &   \\* \cdashline{4- 4}\cdashline{7- 10}
+	  &   &   & Pt &   &   &  &  &  & N &   \\ \hline 
+	\multirow{2}{*}{250} & \multirow{2}{*}{5:2} & \multirow{2}{*}{27} & Si & \multirow{2}{*}{110} & \multirow{2}{*}{770} &  &  &  & N &   \\* \cdashline{4- 4}\cdashline{7- 10}
+	  &   &   & Pt &   &   &  &  &  & N &   \\ \hline 
+	\multirow{3}{*}{250} & \multirow{3}{*}{3:1} & \multirow{3}{*}{28} & Si & \multirow{3}{*}{120} & \multirow{3}{*}{480} &  &  &  & N &   \\* \cdashline{4- 4}\cdashline{7- 10}
+	  &   &   & Pt &   &   &  &  &  & N &   \\* \cdashline{4- 4}\cdashline{7- 10}
+	  &   &   & STO &   &   &  &  &  & Y &  \\ \hline 
+	\multirow{2}{*}{250} & \multirow{2}{*}{3:1} & \multirow{2}{*}{29} & Si & \multirow{2}{*}{50} & \multirow{2}{*}{200} &  &  &  & N &   \\* \cdashline{4- 4}\cdashline{7- 10}
+	  &   &   & Pt &   &   &  &  &  & N &   \\ \hline 
+	250 & 2:1 & 18 & Si & 200 & 600 &  &  &  & N & Might be running low on Pb(TMHD)2 precursor, going to add some more this afternoon \\ \hline 
+	300 & 1:1 & 4 & Si & 250 & 500 &  &  &  & N &  \\ \hline 
+	300 & 1:2 & 5 & Si & 200 & 600 &  &  &  & N &  \\ \hline 
+	300 & 2:3 & 9 & Si & 175 & 875 &  &  &  & N & May have gotten recipe timing wrong, might have to re-do this test... \\ \hline 
+	300 & 3:2 & 10 & Si & 50 & 250 &  &  &  & N &  \\ \hline 
+	300 & 3:1 & 11 & Si & 150 & 450 &  &  &  & N &  \\ \hline
+\end{longtable}}
+
+\end{landscape}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{landscape}
 \section{ALD Reactor Diagram}
 \label{sup:ALD-design}
 
+\begin{figure}[htb]
+   \centering
+   \subfloat[Photograph][Photograph]{%
+   	\label{fig:S100-photo}%
+	\includegraphics[height=8cm]{./Figures/Appendix/ALD-schematic/savannah-s100}%
+	} 
+	\hspace{1cm}
+  \subfloat[Schematic Diagram][Schematic Diagram]{%
+   	\label{fig:S100-schematic}%
+	\includegraphics[height=8cm]{./Figures/Appendix/ALD-schematic/savannah-schematic}%
+	} 	
+   \caption[Cambridge NanoTech, inc. S100 ALD System]%
+   		{Cambridge NanoTech, inc. Savannah S100 ALD reactor. Precursors are stored in heated cylinders, flow up to the reaction zone, and byproducts are pumped out of the vacuum line on the right side. Each zone can be individually temperature controlled.}
+   \label{fig:S100}
+\end{figure}
+%
+%\begin{figure}[htbp]
+%	\begin{center}
+%		\includegraphics[width=0.5\textwidth]{./Figures/Appendix/ALD-schematic/savannah-s100}
+%		\caption[Photograph of S100 ALD Reactor]{Photograph of the Cambridge NanoTech, inc. %
+%				Savannah S100 ALD reactor}
+%		\label{fig:S100-photo}
+%	\end{center}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%	\begin{center}
+%		\includegraphics[width=0.85\textwidth]{./Figures/Appendix/ALD-schematic/savannah-schematic}
+%		\caption[Diagram of S100 ALD Reactor]{Diagram of the Cambridge NanoTech, inc. %
+%				Savannah S100 ALD reactor. Precursors are stored in heated cylinders, flow up to the reaction zone, and byproducts are pumped out of the vacuum line on the right side. Each zone can be individually temperature controlled. }
+%		\label{fig:S100-schematic}
+%	\end{center}
+%\end{figure}
 
+
+%\end{landscape}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -54,6 +171,7 @@ Acetone
 \section{Recipes for S100 ALD System}
 \label{sup:recipes}
 
+Some of these recipes (\ce{HfO2}, \ce{Pt}, and \ce{TiO2}) were provided courtesy of Cambridge NanoTech, inc.\cite{CNT-web}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
