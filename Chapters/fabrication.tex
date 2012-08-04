@@ -8,16 +8,22 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Precursor Selection}
+\label{sect:SampFab-Precursor}
 
 \lipsum
 
 %%%%%%%%%%%%%%%
 \subsection{Titanium Source}
 
-The source of titanium that was used was titanium isopropoxide (\TiOiPr{}). This compound is very commonly used for ALD techniques 
+The source of titanium that was used was titanium(IV) isopropoxide (short chem form here). This compound is very commonly used in ALD literature. It is a liquid precursor with a relatively high vapor pressure and reacts easily with most oxidizers; the most commonly used oxidant for this reaction is water vapor, similar to the TMA-\ce{H2O} reaction.  
 
 %%%%%%%%%%%%%%%
 \subsection{Lead Source}
+
+Lead sources investigated included tetraphenyl lead (\ce{Ph4Pb}), Bis(2,2,6,6-tetramethyl-3,5-heptanedionato)lead(II) (\ce{Pb(TMHD)2}), and lead(II) hexafluoroacetylacetonate (\ce{Pb(HFAc)2}). 
+
+%%%%%%%%%%%%%%%
+\subsection{Oxidizer}
 
 \lipsum
 
@@ -49,7 +55,7 @@ If the samples are stored, it is recommended to again clean the samples in the s
 
 Oxide crystal substrates were prepared in such a fashion as to promote the formation of atomically flat terraces. This has the advantage of promoting a uniform surface species across the entire sample --- the etchant used in this process leaves the sample titania-terminated. 
 
-To prepare these samples, the substrates are first pre-cleaned in a three step sonication process. The samples were cleaned for five minutes in each of acetone, methanol, and isopropyl alcohol. Subsequently, the samples were sonicated for fifteen minutes in DI water. \reword{Need to find reference and exact timings}. The substrates were then dipped into buffered hydrofluoric acid to etch for \reword{35 seconds}, then removed and flushed with copious DI water.  Once the sample is thoroughly rinsed, the samples are dried using dry nitrogen. 
+To prepare these samples, the substrates are first pre-cleaned in a three step sonication process. The samples were cleaned for five minutes in each of acetone, methanol, and isopropyl alcohol. Subsequently, the samples were sonicated for fifteen minutes in DI water. \reword{Need to find reference and exact timings. Email Eric.}. The substrates were then dipped into buffered hydrofluoric acid to etch for \reword{35 seconds}, then removed and flushed with copious DI water.  Once the sample is thoroughly rinsed, the samples are dried using dry nitrogen. 
 
 After the etching process, the samples are annealed at 1050\degC{} for \reword{two hours}. Once the samples are cooled, they are ready for immediate use. AFM can be used to confirm the presence of atomic terraces. 
 
@@ -79,7 +85,15 @@ For an ALD run to be successful, the acceptable temperature window for all of th
 
 \subsection{Precursor Dosage}
 
+The dosage of precursor or oxidant to the surface is another parameter of critical importance. An ALD reaction requires a minimal amount of precursor to sufficiently saturate the surface, while it is beneficial to minimize any excess precursor as it will be a wasted byproduct (minimizing costs, environmental impact, etc.). 
 
+The vaporization behavior of the precursor can have a dramatic impact on how simple or difficult it is to deliver a saturating dose to the surface. Some materials have readily available precursors with high vapor pressures; titanium isopropoxide and trimethylaluminum (TMA) are both liquids, and tetrakis(dimethylamido)hafnium (\ce{Hf\{N(CH3)2\}4}) is a low-melting temperature solid. These are commonly used precursors for depositing their respective oxides. This vapor pressure becomes an important consideration when choosing a potential compound for use in ALD (as discussed in section~\ref{sect:SampFab-Precursor}).
+
+Insufficient dosing is apparent in a deposition run by a slower than average growth rate, or also as a non-uniform deposition rate across the sample. However, overdosing is not readily apparent in an ALD-mode deposition. The dose must be lowered to a point where the dose is insufficient, and then increased back to a saturating level. 
+
+Controlling the dose is dependent on injection time (which is the time the valve between the process line and the precursor storage vessel is open), precursor temperature, and the cycle duration (time between precursor injections). By increasing either the injection time or the precursor's temperature the dose is increased, except in some cases with low vapor pressure materials. In this case, it can sometimes be found that the evaporation kinetics are slow and it takes additional time to build up a sufficient amount of vapor to provide a dose to the reactor. 
+
+If necessary, multiple doses of precursor can be delivered to the sample during each cycle to increase the total delivered dose.
 
 %%%%%%%%%%%%%%%
 
