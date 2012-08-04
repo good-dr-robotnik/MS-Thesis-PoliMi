@@ -6,16 +6,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Synthesis of perovskite oxides has been demonstrated using a wide range of techniques. These range from solution-based processing methods (sol-gel approach), to physical vapor methods (molecular beam epitaxy and pulsed laser deposition), and gas phase chemical methods (chemical vapor deposition and atomic layer deposition). This review will briefly discuss sol-gel, physical vapor deposition, as well as CVD methodology, but will focus in more depth on films deposited via ALD. 
+Synthesis of perovskite oxides has been demonstrated using a wide range of techniques. These range from solution-based processing methods (sol-gel approach), to physical vapor methods (molecular beam epitaxy and pulsed laser deposition), and gas phase chemical methods (chemical vapor deposition and atomic layer deposition). This review will briefly discuss physical vapor deposition and CVD methodology, but will focus in more depth on films deposited via ALD. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Sol-Gel Processing}
-
-\lipsum
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\section{Sol-Gel Processing}
+%
+%\lipsum
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -45,11 +45,11 @@ Atomic Layer Deposition (ALD) is a modification on standard CVD processes, with 
 		\AddRxnDesc{TMA: Precursor-Surface Site Reaction}%
 		\\
 	M-O-Al(CH3)2_{\,surf} + 2H2O &-> M-O-Al(OH)2_{\,surf} + 2CH4 \label{chem:TMA2}%
-		\AddRxnDesc{TMA: Ligand Oxidation \& Site Regeneration}
+		\AddRxnDesc{TMA: Ligand Oxidation \& Site Regeneration}	
 \end{reactions}
 
 
-In this example, it is seen that the first stage allows the TMA to react with the hydrated substrate surface to form part of a layer of alumina (\ce{Al2O3}), liberating a molecule of methane as a byproduct. In the next step, the remaining ligands are stripped away from the bound TMA molecule and replacing them with hydroxyl groups. This returns the system to the initial state --- where the surface is presenting sites available to react with more TMA --- and the cycle is completed. A graphical example of this process can be found in figure~\ref{fig:TMA-illustration}.
+In this example, it is seen that the first stage allows the TMA to react with the hydrated substrate surface to form part of a layer of alumina (\ce{Al2O3}), liberating a molecule of methane as a byproduct. In the next step, the remaining ligands are stripped away from the bound TMA molecule and replacing them with hydroxyl groups. This returns the system to the initial state --- where the surface is presenting sites available to react with more TMA --- and the cycle is completed. It must be noted that some of these ligand exchanges will also cause oxygen bridges, necessary to bind together atoms in a layer. A graphical example of this process can be found in figure~\ref{fig:TMA-illustration}.
 
 
 \begin{figure}[tbp]
@@ -73,12 +73,12 @@ In this example, it is seen that the first stage allows the TMA to react with th
 	\includegraphics[width=0.45\linewidth]{./figures/synthesis/TMA4}%
 	} \\
   \subfloat[][Oxidation Reaction (Ligand Exchange)]{%
-%   	\label{fig:Q2000-image}%
+   	\label{fig:ALD-TMA5}%
 	\includegraphics[width=0.45\linewidth]{./figures/synthesis/TMA5}%
 	} 
 	\hspace{6pt} 
   \subfloat[][Completed Cycle, Regenerated Surface]{%
-%   	\label{fig:Q2000-image}%
+   	\label{fig:ALD-TMA6}%
 	\includegraphics[width=0.45\linewidth]{./figures/synthesis/TMA6}%
 	} 	
    \caption[Illustration of Example ALD Cycle]%
