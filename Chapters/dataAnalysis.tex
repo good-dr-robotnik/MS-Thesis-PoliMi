@@ -123,7 +123,7 @@ This first step takes advantage of the transparency of the film at high waveleng
 
 Once reasonable estimates for $n$, $\kappa$, and the film layer thickness are obtained at the higher wavelengths, the second step of the analysis is to generate values of $\tilde{n}$ for the rest of the spectrum. The film thickness parameter is fixed at the value determined from the Cauchy model. The values of $n$ and $\kappa$ are allowed to be determined freely without the use of a model (i.e. directly determined by use of the Fresnel relations). This type of modeling is not physical, but assists in the generation of the oscillator-based model in the next step. The software package is then instructed to run a point-by-point fit of the data from highest- to lowest-$\lambda$, attempting to minimize the change in $n$ or $\kappa$ between adjacent data points. 
 
-This model is then inputted into a oscillator model. For the analysis of these films, a Tauc-Lorentz oscillator model was utilized. The oscillator models used by WVASE32 are expressed in terms of the complex dielectric function $\tilde{\epsilon}$, which relates to $\tilde{n}$ via the relationship in equation~\vref{eq:dielectric}. The Tauc-Lorentz model changes the Lorentzian model by allowing for some absorption below the fundamental bandgap energy, which would be due to defect states and other intra-band transition mechanisms. The Tauc-Lorentz model uses the parameterization shown in equation~\vref{eq:TaucLorentz}\cite{WVASE-manual,Jellison96}. $\epsilon_{1}$ is provided here in a condensed version (eq.~\vref{eq:TaucLorentz-1}); the full expanded version, and its derivation via Kramers-Kronig integration from $\epsilon_{2}$, has been presented by Jellison and Modine\cite{Jellison96}. 
+This model is then inputted into a oscillator model. For the analysis of these films, a Tauc-Lorentz oscillator model was utilized. The oscillator models used by WVASE32 are expressed in terms of the complex dielectric function $\tilde{\epsilon}$, which relates to $\tilde{n}$ via the relationship in equation~\vref{eq:dielectric}. The Tauc-Lorentz model changes the Lorentzian model by allowing for some absorption below the fundamental bandgap energy, which would be due to defect states and other intra-band transition mechanisms. The Tauc-Lorentz model uses the parameterization shown in equation~\vref{eq:TaucLorentz}\cite{WVASE-manual,Jellison96}. $\epsilon_{1}$ is provided here in a condensed version (eq.~\vref{eq:TaucLorentz-1}); the full expanded version, and its derivation via Kramers-Kronig integration (whose relations are shown in equation \vref{eq:KK-relation}) from $\epsilon_{2}$, has been presented by Jellison and Modine\cite{Jellison96}. 
 
 \begin{subequations}
 \label{eq:dielectric}
@@ -146,8 +146,16 @@ This model is then inputted into a oscillator model. For the analysis of these f
 		\cdot \frac{1}{E} && E> E_{g}\\
         	\epsilon_{2} (E) = 0 && E\leq E_{g}
 \end{empheq}
+\end{subequations}\\
+
+\begin{subequations}
+\label{eq:KK-relation}
+\begin{align}
+	\epsilon_{1}\left(\omega\right)-1&=\frac{2}{\pi}P\int^{\infty}_{0}\frac{\omega\prime\epsilon_{2}\left(\omega\prime\right)}{\omega\prime^{2}-\omega^{2}}d\omega\prime\\
+	\epsilon_{2}\left(\omega\right)&=-\frac{2\omega}{\pi}P\int^{\infty}_{0}\frac{\epsilon_{1}\left(\omega\prime\right)-1}{\omega\prime^{2}-\omega^{2}}d\omega\prime
+\end{align}
 \end{subequations}
-\\
+
 \indent The WVASE32 software package allows one to use a graphical interface to provide initial guesses for the various fit parameters. At times this required multiple oscillators to best fit the predicted $\epsilon_{2}$ function. Once this has been set, all of the parameters affecting $\epsilon_{2}$ ($A, E_{0}, C, E_{G}$) are marked to be included in the fit. The software is then instructed to perform a best-fit of the oscillator to $\epsilon_{2}$. Once this operation completes, the software is set to fit to $\epsilon_{1}$ and only the value of the $\epsilon_{1}$ offset is allowed to be fit. Finally, the software is set to optimize vs both $\epsilon_{1}$ and $\epsilon_{2}$, and all parameters are included. This completes the initial setup of the oscillator model. 
 
 Finally, the model is set to also allow the layer thickness to be fit and a general fit to the entire experimental dataset is performed. This provides the best guess to the physical values of the film. The thickness calculated by this procedure matches very closely to measurements performed by other methods (e.g. SEM imaging or AFM measurement of a lithographically created step). The bandgap parameter also matches well to literature values (when using standard samples of well defined materials, such as a thin layer of titania). 
@@ -170,7 +178,7 @@ In order for the desired phase to be preferred, without any impurity phases prec
    \includegraphics[width=0.75\textwidth]{./figures/dataanalysis/PTO-phase}
    \caption[Preferred Phase vs. Stoichiometric Ratio]{Graphic illustrating preferred phase of an annealed %
    		film at a range of stoichiometric ratios and annealing temperatures. A slight excess of \ce{Pb} %
-		in the system helps to stabilize the perovskite \PTO{} phase.\cite{harjuoja_2006}}
+		in the system is expected to help stabilize the perovskite \PTO{} phase.\cite{harjuoja_2006}}
    \label{fig:PTO-phase}
 \end{figure}
 
