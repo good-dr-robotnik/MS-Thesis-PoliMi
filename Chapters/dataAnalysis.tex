@@ -158,11 +158,18 @@ This model is then inputted into a oscillator model. For the analysis of these f
 
 \indent The WVASE32 software package allows one to use a graphical interface to provide initial guesses for the various fit parameters. At times this required multiple oscillators to best fit the predicted $\epsilon_{2}$ function. Once this has been set, all of the parameters affecting $\epsilon_{2}$ ($A, E_{0}, C, E_{G}$) are marked to be included in the fit. The software is then instructed to perform a best-fit of the oscillator to $\epsilon_{2}$. Once this operation completes, the software is set to fit to $\epsilon_{1}$ and only the value of the $\epsilon_{1}$ offset is allowed to be fit. Finally, the software is set to optimize vs both $\epsilon_{1}$ and $\epsilon_{2}$, and all parameters are included. This completes the initial setup of the oscillator model. 
 
-Finally, the model is set to also allow the layer thickness to be fit and a general fit to the entire experimental dataset is performed. This provides the best guess to the physical values of the film. The thickness calculated by this procedure matches very closely to measurements performed by other methods (e.g. SEM imaging or AFM measurement of a lithographically created step). The bandgap parameter also matches well to literature values (when using standard samples of well defined materials, such as a thin layer of titania). 
+Finally, the model is set to also allow the layer thickness to be fit and a general fit to the entire experimental dataset is performed. This provides the best guess to the physical values of the film. The thickness calculated by this procedure matches very closely to measurements performed by other methods (e.g. SEM imaging or AFM measurement of a lithographically created step). 
 
 If similar deposition parameters are utilized, it is possible to save the parameterized model for later use. This allows the analysis to be streamlined when the material is expected to remain constant, for example if tests of deposition at different layer thicknesses are performed. In this case, the material would have optical behavior very similar to the initial sample, and the oscillator model would be sufficiently close to valid parameters to be used directly for fits. All that would need to be adjusted initially would be the estimated layer thickness. If the fit fails to produce useful data, such as unreasonable values for any of the parameters or very large confidence intervals, it is recommended to proceed with the entire standard analysis procedure. 
 
-Experimental data sets and the resulting fitted model for selected samples are presented in appendix~\vref{sup:Ellipsometry}.
+Further analysis can be performed to estimate the bandgap of the layer, via Tauc plot analysis. The method requires the calculation of the absorption coefficient ($\alpha$) from the value of $k$ for the layer (see equation~\vref{eq:alpha}). $\alpha$ is usually provided in terms of cm$^{-1}$, so if the wavelength is provided in nanometers a corresponding factor of $10^{7}$ must be incorporated as well. Subsequently, a Tauc plot is constructed using a combination of $\alpha$ and the photon energy. For direct bandgap materials the Tauc parameter is given by $\left(\alpha E_{ph}\right)^{2}$. If the bandgap is of the indirect type, the function is changed to $\sqrt{\alpha E_{ph}}$. The bandgap parameter matches well to literature values (when using standard samples of well defined materials, such as a thin layer of titania). It must be noted that the bandgap that is calculated is the overall bandgap of the layer, which may be a combination of multiple phases or materials. 
+
+\begin{equation}
+	\label{eq:alpha}%
+	\alpha = \frac{4\pi k}{\lambda}
+\end{equation}
+
+Experimental data sets, the resulting fitted models, and Tauc analyses for selected samples are presented in appendix~\vref{sup:Ellipsometry}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
