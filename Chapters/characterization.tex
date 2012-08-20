@@ -60,7 +60,7 @@ One of the downsides of EDXS is that the interaction volume of electrons is much
 
 X-ray fluorescence spectroscopy (XRFS) is a similar technique to EDXS. In XRFS the excitation used is X-ray photons (often from a Cu K$_{\alpha}$ source with $\lambda = 1.54$ \AA), as opposed to energetic electrons. In other considerations the techniques are equivalent. 
 
-XRFS often has a lower noise floor than EDXS, allowing smaller signals to be more easily identified (such as in ultra-thin films). It does suffer the same disadvantage of having overlapping peaks. This resolution issue can be alleviated to some degree by using wavelength dispersive XRFS (WD-XRFS), which uses diffraction techniques to analyze the emitted x-ray spectrum. 
+XRFS has a lower noise floor than EDXS, due to the lack of signal from Bremsstrahlung radiation from the deceleration of electrons, allowing smaller signals to be more easily identified (such as in ultra-thin films). It does suffer the same disadvantage of having overlapping peaks. This resolution issue can be alleviated to some degree by using wavelength dispersive XRFS (WD-XRFS), which uses diffraction techniques to analyze the emitted x-ray spectrum. 
 
 %%%%%%%
 
@@ -130,7 +130,7 @@ Variable angle spectroscopic ellipsometry (VASE) is one of these variants. Spect
 
 During this project, a VASE M-2000U system (figure~\vref{fig:M2000_image}) built by J.A. Woollam, inc. was used to collect all of the ellipsometric data. In addition, data analysis was performed using the WVASE32{$^{\copyright}$} package also provided by J.A. Woollam, inc. The system utilizes a rotating compensator and a CCD detector to greatly decrease data collection time by collecting data across the entire spectrum simultaneously.  More information on this system is available from the J.A. Woollam, inc. webpage.\cite{woollam-web}
 
-\begin{figure}[tb]
+\begin{figure}[htbp]
    \centering
    \includegraphics[width=0.5\linewidth]{./figures/characterization/M2000_ellipsometer_image.png} 
    \caption[J.A. Woollam M-2000U Ellipsometer]%
@@ -184,7 +184,7 @@ Figure~\vref{fig:braggs-law} gives a graphical illustration of this principle. I
 
 The diffraction pattern can be used to determine a list of the interplane spacings (d-spacings) present in the sample. The values of peaks at various 2$\theta$ can be converted to d-spacings via the relation $d=\frac{\lambda}{2\sin\theta}$. Individual materials will have a specific pattern of peaks that allow them to be identified in the material. 
 
-This project used two XRD instruments, a Br¬\"uker D8 Discover XRD (see figure~\vref{fig:bruker-d8-photo}) and a Rigaku SmartLab XRD (see figure~\vref{fig:rigaku-smartlab-photo}). Both sources utilized a Cu-K$_{\alpha}$ X-ray source ($\lambda = 1.5418$\AA). 
+This project used two XRD instruments, a Br�\"uker D8 Discover XRD (see figure~\vref{fig:bruker-d8-photo}) and a Rigaku SmartLab XRD (see figure~\vref{fig:rigaku-smartlab-photo}). Both sources utilized a Cu-K$_{\alpha}$ X-ray source ($\lambda = 1.5418$\AA). 
 
 \begin{figure}[htbp]
    \centering
@@ -220,11 +220,11 @@ This project used two XRD instruments, a Br¬\"uker D8 Discover XRD (see figure~
 
 \subsection{Thermogravimetric Analysis}
 
-Thermogravimetric analysis (TGA) is a very useful tool when attempting to determine the viability of a precursor in an ALD process. It allows for estimation of vaporization rate at various temperature rates as well as indications of chemical breakdown (i.e. thermalization) which would negate the precursor's usefulness. 
+Thermogravimetric analysis (TGA) is a very useful tool when attempting to determine the viability of a precursor in an ALD process. It allows for estimation of vaporization rate at various temperature rates as well as indications of chemical breakdown (i.e. thermalization) which would hinder the precursor's usefulness. 
 
 At its core, TGA is a measurement of mass loss as a function of temperature or time. A small sample (1--10 mg) of material is placed in a microgram balance pan and suspended inside a furnace. The furnace is then heated at a specified rate while the sample mass is carefully monitored. For the experiments used in this study (evaluation of thermal vaporization and thermal degradation) it is important to ensure that the testing environment is inert. This is accomplished by using a platinum pan in the microgram balance and constantly purging the furnace with a small flow of dry nitrogen gas. The heating rate can be varied according to a pre-determined program to provide more information at various individual temperatures. 
 
-This technique was used to evaluate various precursor candidates for the lead oxide half of the \PTO deposition procedure. The instrument used was a Q50 TGA device (fig.~\vref{fig:Q50-image}).  A detailed discussion of TGA procedures and the investigated chemicals can be found in subsequent chapters (see~\vref{sec:Methods-TGA} and \vref{chap:Results-Thermal}). 
+This technique was used to evaluate various precursor candidates for the lead oxide half of the \PTO{} deposition procedure. The instrument used was a Q50 TGA device (fig.~\vref{fig:Q50-image}).  A detailed discussion of TGA procedures and the investigated chemicals can be found in subsequent chapters (see~\vref{sec:Methods-TGA} and \vref{chap:Results-Thermal}). 
 
 \begin{figure}[tb]
    \centering
@@ -248,7 +248,7 @@ This technique was used to evaluate various precursor candidates for the lead ox
 	
 Differential scanning calorimetry (DSC) is a technique that allows for the determination of various critical temperatures for a material, and also can highlight changes in chemical structure due to degradation or other thermal processes. 
 
-DSC is the analysis of energy absorption as a function of temperature, which is the essence of calorimetry. DSC uses a sample and reference system to isolate the energy absorbed by the sample from that of the holder pan. Sample sizes usually range from 0.3--2 mg of material; as the samples used in this study are volatile the sample pans are hermetically sealed to prevent mass loss. The sample and reference pans are then placed inside a thermally insulated chamber. The temperature of each is carefully monitored, and differing amounts of heat are applied to negate the temperature difference between the sample and reference. The difference in absorbed heat as a function of temperature is then given as the result. In general, experiments include both heating and cooling curves to gain a complete understanding of the different energies. 
+DSC is the analysis of energy absorption as a function of temperature, which is the essence of calorimetry. DSC uses a sample and reference system to isolate the energy absorbed by the sample from that of the holder pan. Sample sizes usually range from 0.1--2 mg of material; as the samples used in this study are volatile the sample pans are hermetically sealed to prevent mass loss. The sample and reference pans are then placed inside a thermally insulated chamber. The temperature of each is carefully monitored, and differing amounts of heat are applied to negate the temperature difference between the sample and reference. The difference in absorbed heat as a function of temperature is then given as the result. In general, experiments include both heating and cooling curves to gain a complete understanding of the different energies. 
 	
 DSC was used to analyze the behavior of precursor chemicals around their evaporation and reaction temperatures. The main goal was to determine if the material underwent any thermally-activated degradation processes at either of these two temperature ranges. At the evaporation temperature, the sample was generally cycled multiple times to simulate actual use in the ALD. These measurements were taken using a Q2000 DSC system (fig.~\vref{fig:Q2000-image}) made by T.A. Instruments, inc.	
 	
