@@ -151,7 +151,57 @@ During this project, a VASE M-2000U system (figure~\vref{fig:M2000_image}) built
 
 \subsection{X-Ray Diffraction}
 
-\lipsum	
+Being able to identify the presence of various phases and materials was an important 
+
+X-ray diffraction (XRD) is a very commonly used technique for performing this identification. Utilizing the concepts of coherent interference, which leads to Bragg's law of diffraction given in equation~\vref{eq:braggs-law}. X-rays are utilized because their wavelengths are similar to the length scales between atomic planes in crystals (1--100\AA). As the incident rays pass through the sample and are reflected by atomic planes, they can either constructively or destructively interfere. 
+
+\begin{equation}
+ \label{eq:braggs-law}
+ \displaystyle
+	n\lambda = 2d\sin\theta
+\end{equation}
+
+Figure~\vref{fig:braggs-law} gives a graphical illustration of this principle. If the extra distance traversed by photons on the first path is equal to an integer number of wavelengths there will be constructive interference (see fig.~\vref{fig:bragg-constructive}). However, if the $\theta$ angle is slightly changed the interference rapidly obtains destructive character (see fig.~\vref{fig:bragg-destructive}). In this manner, if the crystal is moved through a range of $\theta-2\theta$ values, a pattern of angles where constructive interference occurred. 
+
+\begin{figure}[htbp]
+   \centering
+   \subfloat[Constructive Interference][Constructive Interference]{%
+   	\label{fig:bragg-constructive}%
+	\includegraphics[width=0.475\linewidth]{./figures/characterization/bragg-diffraction-constructive}%
+	} 
+	\hspace{0.5cm}
+  \subfloat[Destructive Interference][Destructive Interference]{%
+   	\label{fig:bragg-destructive}%
+	\includegraphics[width=0.475\linewidth]{./figures/characterization/bragg-diffraction-destructive}%
+	} 	
+   \caption[Illustration of Bragg's Law]%
+   		{These two images illustrate the effect of interference on Bragg diffraction. In (a) the extra %
+		path length is exactly correct to allow coherence with the other ray; this causes constructive %
+		interference. (b) is the other condition, where the path length causes a phase shift of 90\Deg{}%
+		and thus the rays interfere destructively.}
+   \label{fig:braggs-law}
+\end{figure}
+
+The diffraction pattern can be used to determine a list of the interplane spacings (d-spacings) present in the sample. The values of peaks at various 2$\theta$ can be converted to d-spacings via the relation $d=\frac{\lambda}{2\sin\theta}$. Individual materials will have a specific pattern of peaks that allow them to be identified in the material. 
+
+This project used two XRD instruments, a Br¬\"uker D8 Discover XRD (see figure~\vref{fig:bruker-d8-photo}) and a Rigaku SmartLab XRD (see figure~\vref{fig:rigaku-smartlab-photo}). Both sources utilized a Cu-K$_{\alpha}$ X-ray source ($\lambda = 1.5418$\AA). 
+
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[width=0.5\linewidth]{./figures/characterization/bruker-d8-photo.jpg} 
+   \caption[Bruker D8 Discover XRD]%
+   		{Photograph of the Bruker D8 Discover X-ray diffractometer}
+   \label{fig:bruker-d8-photo}
+\end{figure}
+
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[width=0.75\linewidth]{./figures/characterization/rigaku-smartlab-photo.jpg} 
+   \caption[Rigaku SmartLab XRD]%
+   		{Photograph of the Rigaku SmartLab X-ray diffractometer}
+   \label{fig:rigaku-smartlab-photo}
+\end{figure}
+
 
 %%%%%%%
 
