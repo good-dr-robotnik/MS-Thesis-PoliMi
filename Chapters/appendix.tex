@@ -299,7 +299,44 @@ Some of these recipes (\ce{HfO2}, \ce{Pt}, and \ce{TiO2}) were provided courtesy
 \section{Composition Results}
 \label{sup:Composition}
 
+\begin{table}[htbp]
+	\centering
+	\caption[XRF Calculated Compositions]{Calculated compositions of selected samples, determined via XRF. \label{tbl:XRF-compositions}}
+	\begin{tabular}{l l l l l}
+	\toprule
+	&&\multicolumn{3}{c}{Composition (\%)}\\
+	\cmidrule{3-5}
+	Run \#&Substrate&Lead&Titanium&Ti:Pb Ratio\\
+	\midrule
+	0&\ce{SiO2}&55.99&44.01&0.786\\
+	1&\ce{SiO2}&55.00&45.00&0.809\\
+	13&\ce{SiO2}&53.96&46.04&0.853\\
+	16&\ce{SiO2}&49.45&50.55&1.022\\
+	19&\ce{SiO2}&65.87&34.13&0.518\\
+	&Pt-Si&42.86&57.14&1.333\\
+	20&\ce{SiO2}&56.52&43.48&0.769\\
+	&\ce{Pt-Si}&51.22&48.78&0.952\\
+	21&\ce{SiO2}&69.60&30.40&0.437\\
+	&Pt-Si&56.08&43.92&0.783\\
+	22&\ce{SiO2}&67.64&32.36&0.478\\
+	&Pt-Si&56.06&43.94&0.784\\
+	23&\ce{SiO2}&66.89&33.11&0.495\\
+	&Pt-Si&49.06&50.94&1.038\\
+	24&\ce{SiO2}&68.96&31.06&0.450\\
+	&Pt-Si&62.16&37.84&0.609\\
+	\bottomrule
+	\end{tabular}
+\end{table}
 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.95\textwidth]{./Figures/Appendix/Composition/PTO-run0-pre-anneal.png}
+	\caption[XRF Spectrum of PTO \#0]%
+		     {The XRF spectrum collected from deposition run \#0.  }
+	\label{fig:XRF-0-SiO2}
+\end{figure}
+
+\clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -307,32 +344,9 @@ Some of these recipes (\ce{HfO2}, \ce{Pt}, and \ce{TiO2}) were provided courtesy
 \section{Ellipsometry Results}
 \label{sup:Ellipsometry}
 
-\begin{figure}[htbp]
-   \centering
-   \subfloat[Psi vs. Wavelength][Psi ($\Psi$) vs. Wavelength ($\lambda$)]{%
-   	\label{fig:Ellip-0-SiO2-Psi}%
-	\includegraphics[width=0.47\textwidth]{./Figures/Appendix/Ellipsometry/Run-0-SiO2/Psi.pdf}%
-	}\hspace{0.5cm}
-  \subfloat[Delta vs. Wavelength][Delta ($\Delta$) vs. Wavelength ($\lambda$)]{%
-   	\label{fig:Ellip-0-SiO2-Delta}%
-	\includegraphics[width=0.47\textwidth]{./Figures/Appendix/Ellipsometry/Run-0-SiO2/Delta.pdf}%
-	} \\
-  \subfloat[$n$, $k$ vs. Photon Energy][$n$, $k$ vs. Photon Energy (eV)]{%
-   	\label{fig:Ellip-0-SiO2-nk}%
-	\includegraphics[width=0.47\textwidth]{./Figures/Appendix/Ellipsometry/Run-0-SiO2/n,k.pdf}%
-	}
-   \caption[Results of Ellipsometry Experiments on Sample \#0]%
-   		{The set of plots shown above show the results from ellipsometric analysis on sample \#0 (see %
-		table~\vref{tbl:LoSamples}) grown on a silicon wafer and subsequently annealed. (a) and (b) %
-		show the data and the modeled fit from the experiment. (c) shows the components of the complex %
-		index of refraction ($\tilde n$), $n$ and $k$. Band gap estimation was performed using the values %
-		of $k$. The highlighted portion of $k$ is the nearly linear region used in this analysis.}
-   \label{fig:Ellip-0-SiO2}
-\end{figure}
-
 \begin{table}[htbp]
 	\centering
-	\caption[PTO \#0 Model Variables]{Variables used to produce the model fit for PTO \#0. \label{tbl:PTO-0-ellip-variables}}
+	\caption[PTO \#0 Model Variables]{Variables used to produce the\\model fit for PTO \#0 seen in fig.~\vref{fig:Ellip-0-SiO2}. \label{tbl:PTO-0-ellip-variables}}
 	\begin{tabular}{l l l l}
 	\toprule
 	Layer&Variable&Thickness (nm)&Value\\
@@ -348,6 +362,29 @@ Some of these recipes (\ce{HfO2}, \ce{Pt}, and \ce{TiO2}) were provided courtesy
 	\bottomrule
 	\end{tabular}
 \end{table}
+
+\begin{figure}[htbp]
+   \centering
+   \subfloat[Psi vs. Wavelength][Psi ($\Psi$) vs. Wavelength ($\lambda$)]{%
+   	\label{fig:Ellip-0-SiO2-Psi}%
+	\includegraphics[width=0.47\textwidth]{./Figures/Appendix/Ellipsometry/Run-0-SiO2/Psi.pdf}%
+	}\hspace{0.5cm}
+  \subfloat[Delta vs. Wavelength][Delta ($\Delta$) vs. Wavelength ($\lambda$)]{%
+   	\label{fig:Ellip-0-SiO2-Delta}%
+	\includegraphics[width=0.47\textwidth]{./Figures/Appendix/Ellipsometry/Run-0-SiO2/Delta.pdf}%
+	} \\
+  \subfloat[$n$, $k$ vs. Photon Energy][$n$, $k$ vs. Photon Energy (eV)]{%
+   	\label{fig:Ellip-0-SiO2-nk}%
+	\includegraphics[width=0.47\textwidth]{./Figures/Appendix/Ellipsometry/Run-0-SiO2/n,k.pdf}%
+	}
+   \caption[Results of Ellipsometry on Sample \#0]%
+   		{The set of plots shown above show the results from ellipsometric analysis on sample \#0 (see %
+		table~\vref{tbl:LoSamples}) grown on a silicon wafer and subsequently annealed. (a) and (b) %
+		show the data and the modeled fit from the experiment. (c) shows the components of the complex %
+		index of refraction ($\tilde n$), $n$ and $k$. Band gap estimation was performed using the values %
+		of $k$. The highlighted portion of $k$ is the nearly linear region used in this analysis.}
+   \label{fig:Ellip-0-SiO2}
+\end{figure}
 
 \begin{figure}[htbp]
    \centering
@@ -367,8 +404,27 @@ Some of these recipes (\ce{HfO2}, \ce{Pt}, and \ce{TiO2}) were provided courtesy
    \label{fig:Tauc-0-SiO2}
 \end{figure}
 
+\begin{table}[htbp]
+	\centering
+	\caption[PTO \#20 Model Variables]{Variables used to produce the\\model fit for PTO \#20 seen in fig.~\vref{fig:Ellip-20-Pt}. \label{tbl:PTO-20-ellip-variables}}
+	\begin{tabular}{l l l l}
+	\toprule
+	Layer&Variable&Thickness (nm)&Value\\
+	\midrule
+	3. T-L Osc.&&88.77&\\
+	&Amp$_{1}$&&36.542\\
+	&E$_{\mathrm{n1}}$&&4.505\\
+	&C$_{1}$&&1.298\\
+	&E$_{\mathrm{g}}$&&2.071\\
+	&E$_{1}$ offset&&3.619\\
+	2. \ce{Pt}&&15.052&\\
+	1. \ce{SiO2}&& 1.103\\
+	0. \ce{Si}&&Substrate&\\
+	\bottomrule
+	\end{tabular}
+\end{table}
+
 \begin{figure}[htbp]
-   \label{fig:Ellip-20-Pt}
    \centering
    \subfloat[Psi vs. Wavelength][Psi ($\Psi$) vs. Wavelength ($\lambda$)]{%
    	\label{fig:Ellip-20-Pt-Psi}%
@@ -382,8 +438,9 @@ Some of these recipes (\ce{HfO2}, \ce{Pt}, and \ce{TiO2}) were provided courtesy
    	\label{fig:Ellip-20-Pt-nk}%
 	\includegraphics[width=0.47\textwidth]{./Figures/Appendix/Ellipsometry/Run-20-Pt/n,k.pdf}%
 	}
-   \caption[Results of Ellipsometry Experiments on Sample \#20 on Platinized Silicon]%
-   		{Caption caption caption}
+   \caption[Results of Ellipsometry on Sample \#20 on Platinized Silicon]%
+   		{Results of ellipsometric analysis on sample \#20, deposited on a platinized silicon substrate. As in fig.\ref{fig:Ellip-0-SiO2}, (a) and (b) show the experimental data and model fits of psi and delta (respectively). (c) gives the plot of calculated $n$ and $k$. For model parameters, see table~\vref{tbl:PTO-20-ellip-variables}}
+		\label{fig:Ellip-20-Pt}
 \end{figure}
 
 \begin{figure}[htbp]
