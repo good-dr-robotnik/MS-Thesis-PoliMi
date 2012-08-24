@@ -31,11 +31,13 @@ IPA
 
 Acetone
 
+\clearpage
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{landscape}
+%\begin{landscape}
 \section{List of Samples}
 \label{sup:LoSamples}
 
@@ -342,7 +344,7 @@ Acetone
 \begin{table}[htbp]
 	\centering
 	\caption[XRF Calculated Compositions]{Calculated compositions of selected samples, determined via XRF. \label{tbl:XRF-compositions}}
-	\begin{tabular}{l l l l l}
+	\begin{tabular}{l l r r r}
 	\toprule
 	&&\multicolumn{3}{c}{Composition (\%)}\\
 	\cmidrule{3-5}
@@ -360,7 +362,7 @@ Acetone
 	21	&\ce{SiO2}	&69.60	&30.40	&0.437\\
 		&Pt-Si		&56.08	&43.92	&0.783\\
 	22	&\ce{SiO2}	&67.64	&32.36	&0.478\\
-		&Pt-Si		&56.06	&43.9	4&0.784\\
+		&Pt-Si		&56.06	&43.94	&0.784\\
 	23	&\ce{SiO2}	&66.89	&33.11	&0.495\\
 		&Pt-Si		&49.06	&50.94	&1.038\\
 	24	&\ce{SiO2}	&68.96	&31.06	&0.450\\
@@ -395,17 +397,17 @@ Acetone
 
 \begin{table}[htbp]
 	\centering
-	\caption[PTO \#0 Model Variables]{Variables used to produce the\\model fit for PTO \#0 seen in fig.~\vref{fig:Ellip-0-SiO2}. \label{tbl:PTO-0-ellip-variables}}
-	\begin{tabular}{l l l l}
+	\caption[PTO \#0 Ellipsometric Model Variables]{Variables used to produce the\\model fit for PTO \#0 seen in fig.~\vref{fig:Ellip-0-SiO2}. \label{tbl:PTO-0-ellip-variables}}
+	\begin{tabular}{l l r r}
 	\toprule
 	Layer&Variable&Thickness (nm)&Value\\
 	\midrule
 	2. T-L Osc.&&81.56&\\
-	&Amp$_{1}$&&12.662\\
-	&E$_{\mathrm{n1}}$&&4.604\\
-	&C$_{1}$&&1.351\\
+	&$\epsilon_{1}$ offset&&2.491\\
+	&Amp&&12.662\\
+	&E$_{\mathrm{n}}$&&4.604\\
+	&C&&1.351\\
 	&E$_{\mathrm{g}}$&&0.856\\
-	&E$_{1}$ offset&&2.491\\
 	1. \ce{SiO2}&&203.69&\\
 	0. \ce{Si}&&Substrate&\\
 	\bottomrule
@@ -455,17 +457,17 @@ Acetone
 
 \begin{table}[htbp]
 	\centering
-	\caption[PTO \#20 Model Variables]{Variables used to produce the\\model fit for PTO \#20 seen in fig.~\vref{fig:Ellip-20-Pt}. \label{tbl:PTO-20-ellip-variables}}
-	\begin{tabular}{l l l l}
+	\caption[PTO \#20 Ellipsometric Model Variables]{Variables used to produce the\\model fit for PTO \#20 seen in fig.~\vref{fig:Ellip-20-Pt}. \label{tbl:PTO-20-ellip-variables}}
+	\begin{tabular}{l l r r}
 	\toprule
 	Layer&Variable&Thickness (nm)&Value\\
 	\midrule
 	3. T-L Osc.&&88.77&\\
-	&Amp$_{1}$&&36.542\\
-	&E$_{\mathrm{n1}}$&&4.505\\
-	&C$_{1}$&&1.298\\
+	&$\epsilon_{1}$ offset&&3.619\\
+	&Amp&&36.542\\
+	&E$_{\mathrm{n}}$&&4.505\\
+	&C&&1.298\\
 	&E$_{\mathrm{g}}$&&2.071\\
-	&E$_{1}$ offset&&3.619\\
 	2. \ce{Pt}&&15.052&\\
 	1. \ce{SiO2}&& 1.103\\
 	0. \ce{Si}&&Substrate&\\
@@ -586,7 +588,7 @@ Acetone
 	\includegraphics[width=0.47\textwidth]{./Figures/Appendix/XRD/Run-20-Pt/43-48.pdf}%
 	}
    \caption[Results of XRD Experiments on Sample \#20 on Platinized Silicon]%
-   		{Caption caption caption}
+   		{XRD of \#20 Pt}
 \end{figure}
 
 
