@@ -22,7 +22,11 @@ While a viable titanium precursor was well identified in literature as well as e
 
 \subsection{Thermogravimetric Analysis}
 
-Thermogravimetric analysis allows for the estimation and comparison of volatility between multiple samples. It was used in this study to compare \HFAc{} and \TMHD{}, primarily their individual volatilities --- by analyzing the mass loss at various temperatures --- and whether or not there are indications of imperfect evaporation. The data collected for these materials can be found in section~\vref{sup:Thermal-Results-TGA}. 
+Thermogravimetric analysis allows for the estimation and comparison of volatility between multiple samples. It was used in this study primarily to compare properties of the two candidate precursors, \HFAc{} and \TMHD{}. Of primary consideration was the volatility of the compound --- evaluated qualitatively by analyzing the mass loss at various temperatures --- and whether or not there are indications of imperfect evaporation. The data collected for these materials can be found below. 
+
+By analyzing the TGA curve for \HFAc{}, found in figure~\vref{fig:TGA-HFAc-Weight}, there are a number of features that are immediately noticeable. First of these is the presence of multiple stages of evaporation in the curve. These occur at approximately 170, 190, and 230\degC{}. A TGA curve for a material that is purely evaporative, e.g. pure water, will have a smooth curve. Additional steps indicate that other processes are activating, and causing changes to the compound affecting the mass loss. 
+
+More detail can be seen by performing a derivation on the TGA curve, giving the mass loss rate. This plot can be found in figure~\vref{fig:TGA-HFAc-DWeight}. This plot shows a shoulder on the primary evaporative peak, and then another peak starting at around 170\degC{} and peaking at 190\degC{}. The shoulder indicates that even during the evaporation of the bulk of the material, before residues and other imperfections cause rate changes, a secondary mechanism is activating and impacting the mass loss rate. 
 
 \begin{figure}[htbp]
    \centering
@@ -42,6 +46,9 @@ Thermogravimetric analysis allows for the estimation and comparison of volatilit
 		sample mass: 6.092 mg}
    \label{fig:TGA-HFAc}
 \end{figure}
+
+Comparing this data with that of \TMHD{}, it is immediately obvious that the evaporation mechanism for the latter is much smoother. There is no major visible step, apart from some slight changes nearing the upper end of the testing temperature range (185--200\degC{}). With a closer look at figure~\vref{fig:TGA-TMHD-DWeight}, it is easier to see that there is basically smooth vaporization up to approximately 180\degC{}, at which point the evaporation is slowed dramatically due to residue buildup. 
+
 \begin{figure}[htbp]
    \centering
    \subfloat[Mass vs. Temperature][Mass vs. Temperature]{%
@@ -59,6 +66,9 @@ Thermogravimetric analysis allows for the estimation and comparison of volatilit
 		Initial sample mass: 3.719 mg}
    \label{fig:TGA-TMHD}
 \end{figure}
+
+Neither of these precursors evaporated cleanly, leaving residues of more than 20\% of their initial sample mass during the temperature scanning tests discussed above. When these were tested at moderate temperatures, such as those to be used for evaporation in the ALD system, both left even larger fractions of their initial masses behind. Testing at a constant temperature (160\degC{}) over a longer period of time gives the plots shown in figure~\vref{fig:TGA-Hold}. From this test, it was found that \HFAc{} left a much larger residue than \TMHD{}, 63\% and 34\% respectively. 
+
 \begin{figure}[htbp]
    \centering
    \subfloat[\HFAc][\HFAc]{%
@@ -78,7 +88,9 @@ Thermogravimetric analysis allows for the estimation and comparison of volatilit
    \label{fig:TGA-Hold}
 \end{figure}
 
-By analyzing the TGA curve for \HFAc{}, found in figure~\vref{fig:TGA-HFAc-Weight}, there are a number of features that are immediately noticeable. First of these is the multiple stages of evaporation present in the curve. These occur at approximately 170, 190, and 230\degC{}. A TGA curve for a material that is purely evaporative, e.g. pure water, will have a single step in the curve. Additional steps indicate that other processes are activating, and causing changes to the compound affecting the mass loss. 
+Based on the results of these tests, the lower residual mass and the cleaner evaporative process, \TMHD{} was predicted to have better performance as an ALD precursor. 
+
+%%%%%%%%%%%%%%%%
 
 More detail can be seen by performing a derivation on the TGA curve, giving the mass loss rate. This plot can be found in figure~\vref{fig:TGA-HFAc-DWeight}. This plot shows a shoulder on the primary evaporative peak, and then another peak starting at around 170\degC{} and peaking at 190\degC{}. The shoulder indicates that even during the evaporation of most of the material, a secondary mechanism is activating causing additional mass loss. 
 
