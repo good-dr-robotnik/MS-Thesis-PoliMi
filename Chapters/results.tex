@@ -96,7 +96,7 @@ Based on the results of these tests, the lower residual mass and the cleaner eva
 
 As discussed in previous chapters, DSC is a powerful tool for analyzing the behavior of precursors. The data collected allows for the understanding of various energies in the material. 
 
-When considering the energetic behavior of \HFAc{} (see fig.~\vref{fig:DSC-HFAc}), there are a few minor features that can be noticed. \reword{Keep going with this.}
+When considering the energetic behavior of \HFAc{} (see fig.~\vref{fig:DSC-HFAc}), there are a few minor features that can be noticed. Primarily at 25 and 150\degC{} small peaks are visible that indicate changes in the material other than the solid to liquid phase change, which is the much larger peak seen around 155-160\degC{}. However, these peaks appear to be negligible, as the total energy release by the sample is a mere 5.32 mJ (1.13 J/g), which is too low for any major chemical changes to be occurring. 
 
 \begin{figure}[htbp]
 	\centering
@@ -108,13 +108,23 @@ When considering the energetic behavior of \HFAc{} (see fig.~\vref{fig:DSC-HFAc}
 	\label{fig:DSC-HFAc}
 \end{figure}
 
+Similarly, when \TMHD{} is heated to moderate temperatures (up to 200\degC{}, see fig~\vref{}fig:DSC-TMHD-200), such as those used in the evaporation and transport stages of the ALD system, there are no irregularities in the data. There is also no net energy gain or loss during the test indicating that heating up to 200\degC{}, along with the associated melting and freezing of the compound, is not detrimental to its structure. 
 
+If the test is again performed, but with a higher upper temperature bound, the data is drastically different (see fig.~\vref{fig:DSC-TMHD-300}). As the sample is heated up to 300\degC{}, there are a number of significant energy releases that occur. These processes initiate at 234\degC{}, and are due to the precursor undergoing pyrolysis reactions. As such, this sets the safe upper temperature range for the ``ALD window'' of \TMHD{} at 230\degC{}. ALD reactions require that the precursor arrive to the surface intact and only react with surface species present. 
 
-\begin{figure}[htbp]
+\begin{figure}[tbp]
 	\centering
-	\includegraphics[width=0.66\textwidth]{./Figures/Data/Thermal-Analysis/DSC/TMHD}
+	\subfloat[][Low Temperature Test (30--200--30\degC{})]{\label{fig:DSC-TMHD-200}%
+		\includegraphics[width=0.66\textwidth]{./Figures/Data/Thermal-Analysis/DSC/TMHD-200}%
+		}\\
+	%\hspace{0.5cm}
+	\subfloat[][High Temperature Test (30--300-30\degC{})]{\label{fig:DSC-TMHD-300}%
+		\includegraphics[width=0.66\textwidth]{./Figures/Data/Thermal-Analysis/DSC/TMHD}%
+		}
 	\caption[DSC Results of \TMHD{}]%
-		{Plot of the DSC scan of \TMHD{}.}
+		{Results from the DSC scans of \TMHD{}. (a) Temperatures up to 200\degC{} show no change in the %
+		material other than that of melting and freezing. (b) As temperatures increase, features start to appear %
+		indicating chemical reconfiguration of the molecule.}
 	\label{fig:DSC-TMHD}
 \end{figure}
 \clearpage
