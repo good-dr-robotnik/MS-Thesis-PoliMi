@@ -5,63 +5,45 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\section{Imaging Techniques}
-%
-%A variety of imaging methods were used to visually inspect the samples at a variety of length scales. The two main techniques that proved invaluable for this aspect of the project were scanning electron microscopy (SEM) as well as atomic force microscopy (AFM). 
-%
-%%%%%%%%
-%
-%\subsection{Scanning Electron Microscopy}
-%
-%Scanning electron microscopy is a widely used technique for imaging nanostructures. 
-%
-%\lipsum
-%
-%
-%%%%%%%%
-%
-%\subsection{Atomic Force Microscopy}
-%
-%\lipsum
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Compositional Analysis}
-\label{sec:Charact-Comp}
+\section{Thermal Analysis}
+\label{sec:Charact-Thermal}
 
 %%%%%%%
-\subsection{Energy-Dispersive X-Ray Spectroscopy}
 
-Energy dispersive X-ray spectroscopy (EDXS) is a commonly used analysis technique for determining the composition of a sample. In this process, a sample is bombarded with high-energy electrons (2--30 keV) which interact with the sample. Some of these electrons will cause a core electron of an atom in the sample to be ejected. This leaves a vacant orbital in the inner shell, which a higher energy electron will fill. In the process of filling the vacancy, the electron will emit an X-ray photon equal to the energy difference between the two states. These energies are referred to using the common X-ray spectroscopy nomenclature (e.g. K$_{\alpha}$, K$_{\beta}$, L$_{\alpha}$). An illustration of this process can be found in figure~\vref{fig:EDXS-image}.  
+\subsection{Thermogravimetric Analysis}
 
-Since the energies of the emitted photons are very specific to each element, the procedure can be used to identify the presence of the element in the sample. With some calibration, EDXS can also be used to quantify the relative amounts of each element in a sample using the different number of collected photons. However, this can sometimes be difficult due to some elements have overlapping spectrums as the peaks are not sharp and different elements can have similar energies for some transitions. 
+Thermogravimetric analysis (TGA) is a very useful tool when attempting to determine the viability of a precursor in an ALD process. It allows for estimation of vaporization rate at various temperature rates as well as indications of chemical breakdown (i.e. thermalization) which would hinder the precursor's usefulness. 
 
-One of the downsides of EDXS is that the interaction volume of electrons is much larger deeper into the sample, so the surface sensitivity of the technique is smaller than with some other techniques. Additionally, Bremsstrahlung radiation, which is caused by high-energy electrons interacting with other charged particles, provides a large degree of background noise which can drastically interfere with the techniques ability to precisely measure, or even identify, trace elements such as those in a thin film. 
+At its core, TGA is a measurement of mass loss as a function of temperature or time. A small sample (1--10 mg) of material is placed in a microgram balance pan and suspended inside a furnace. The furnace is then heated at a specified rate while the sample mass is carefully monitored. For the experiments used in this study (evaluation of thermal vaporization and thermal degradation) it is important to ensure that the testing environment is inert. This is accomplished by using a platinum pan in the microgram balance and constantly purging the furnace with a small flow of dry nitrogen gas. The heating rate can be varied according to a pre-determined program to provide more information at various individual temperatures. 
+
+This technique was used to evaluate various precursor candidates for the lead oxide half of the \PTO{} deposition procedure. The instrument used was a Q50 TGA device (fig.~\vref{fig:Q50-image}).  A detailed discussion of TGA procedures and the investigated chemicals can be found in subsequent chapters (see \vref{chap:Results-Thermal}). 
 
 \begin{figure}[tb]
    \centering
-   \includegraphics[width=0.66\linewidth]{./figures/characterization/EDXS-scheme} 
-   \caption[Illustration of EDXS principle]%
-   		{Graphic illustrating the basic mechanism for EDXS, along with the commonly used %
-		notation for the various energies. The external stimulation would be a high energy %
-		electron.}
-   \label{fig:EDXS-image}
+   \subfloat[Q50 TGA][Q50 TGA]{%
+   	\label{fig:Q50-image}%
+	\includegraphics[width=0.45\linewidth]{./figures/characterization/Q50-TGA}%
+	} 
+  \subfloat[Q2000 DSC][Q2000 DSC]{%
+   	\label{fig:Q2000-image}%
+	\includegraphics[width=0.45\linewidth]{./figures/characterization/Q2000-DSC}%
+	} 	
+   \caption[T.A. Instruments, inc. Instrumentation]%
+   		{Photograph of the thermal analysis instrumentation used during this study, \\
+		made by T.A.  Instruments, inc.}
+   \label{fig:TA-Instruments}
 \end{figure}
-
-
 
 %%%%%%%
 
-\subsection{X-Ray Fluorescence Spectroscopy}
+\subsection{Differential Scanning Calorimetry}
+	
+Differential scanning calorimetry (DSC) is a technique that allows for the determination of various critical temperatures for a material, and also can highlight changes in chemical structure due to degradation or other thermal processes. 
 
-X-ray fluorescence spectroscopy (XRFS) is a similar technique to EDXS. In XRFS the excitation used is X-ray photons (often from a Cu K$_{\alpha}$ source with $\lambda = 1.54$ \AA), as opposed to energetic electrons. In other considerations the techniques are equivalent. 
-
-XRFS has a lower noise floor than EDXS, due to the lack of signal from Bremsstrahlung radiation from the deceleration of electrons, allowing smaller signals to be more easily identified (such as in ultra-thin films). It does suffer the same disadvantage of having overlapping peaks. This resolution issue can be alleviated to some degree by using wavelength dispersive XRFS (WD-XRFS), which uses diffraction techniques to analyze the emitted x-ray spectrum. 
-
-X-ray fluorescence spectroscopy was performed using a fX-SEM analysis system from iXRF Systems, inc.\cite{iXRF-web}  It was the primary method of composition analysis for the results presented in this thesis.
+DSC is the analysis of energy absorption as a function of temperature, which is the essence of calorimetry. DSC uses a sample and reference system to isolate the energy absorbed by the sample from that of the holder pan. Sample sizes usually range from 0.1--2 mg of material; as the samples used in this study are volatile the sample pans are hermetically sealed to prevent mass loss. The sample and reference pans are then placed inside a thermally insulated chamber. The temperature of each is carefully monitored, and differing amounts of heat are applied to negate the temperature difference between the sample and reference. The difference in absorbed heat as a function of temperature is then given as the result. In general, experiments include both heating and cooling curves to gain a complete understanding of the different energies. 
+	
+DSC was used to analyze the behavior of precursor chemicals around their evaporation and reaction temperatures. The main goal was to determine if the material underwent any thermally-activated degradation processes at either of these two temperature ranges. At the evaporation temperature, the sample was generally cycled multiple times to simulate actual use in the ALD. These measurements were taken using a Q2000 DSC system (fig.~\vref{fig:Q2000-image}) made by T.A. Instruments, inc.	
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -137,6 +119,48 @@ During this project, a VASE M-2000U system (figure~\vref{fig:M2000_image}) built
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section{Compositional Analysis}
+\label{sec:Charact-Comp}
+
+%%%%%%%
+\subsection{Energy-Dispersive X-Ray Spectroscopy}
+
+Energy dispersive X-ray spectroscopy (EDXS) is a commonly used analysis technique for determining the composition of a sample. In this process, a sample is bombarded with high-energy electrons (2--30 keV) which interact with the sample. Some of these electrons will cause a core electron of an atom in the sample to be ejected. This leaves a vacant orbital in the inner shell, which a higher energy electron will fill. In the process of filling the vacancy, the electron will emit an X-ray photon equal to the energy difference between the two states. These energies are referred to using the common X-ray spectroscopy nomenclature (e.g. K$_{\alpha}$, K$_{\beta}$, L$_{\alpha}$). An illustration of this process can be found in figure~\vref{fig:EDXS-image}.  
+
+Since the energies of the emitted photons are very specific to each element, the procedure can be used to identify the presence of the element in the sample. With some calibration, EDXS can also be used to quantify the relative amounts of each element in a sample using the different number of collected photons. However, this can sometimes be difficult due to some elements have overlapping spectrums as the peaks are not sharp and different elements can have similar energies for some transitions. 
+
+One of the downsides of EDXS is that the interaction volume of electrons is much larger deeper into the sample, so the surface sensitivity of the technique is smaller than with some other techniques. Additionally, Bremsstrahlung radiation, which is caused by high-energy electrons interacting with other charged particles, provides a large degree of background noise which can drastically interfere with the techniques ability to precisely measure, or even identify, trace elements such as those in a thin film. 
+
+\begin{figure}[tb]
+   \centering
+   \includegraphics[width=0.66\linewidth]{./figures/characterization/EDXS-scheme} 
+   \caption[Illustration of EDXS principle]%
+   		{Graphic illustrating the basic mechanism for EDXS, along with the commonly used %
+		notation for the various energies. The external stimulation would be a high energy %
+		electron.}
+   \label{fig:EDXS-image}
+\end{figure}
+
+
+
+%%%%%%%
+
+\subsection{X-Ray Fluorescence Spectroscopy}
+
+X-ray fluorescence spectroscopy (XRFS) is a similar technique to EDXS. In XRFS the excitation used is X-ray photons (often from a Cu K$_{\alpha}$ source with $\lambda = 1.54$ \AA), as opposed to energetic electrons. In other considerations the techniques are equivalent. 
+
+XRFS has a lower noise floor than EDXS, due to the lack of signal from Bremsstrahlung radiation from the deceleration of electrons, allowing smaller signals to be more easily identified (such as in ultra-thin films). It does suffer the same disadvantage of having overlapping peaks. This resolution issue can be alleviated to some degree by using wavelength dispersive XRFS (WD-XRFS), which uses diffraction techniques to analyze the emitted x-ray spectrum. 
+
+X-ray fluorescence spectroscopy was performed using a fX-SEM analysis system from iXRF Systems, inc.\cite{iXRF-web}  It was the primary method of composition analysis for the results presented in this thesis.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 \section{Phase Identification}
 \label{sec:Charact-PhaseID}
@@ -203,49 +227,6 @@ This project used a Rigaku SmartLab XRD (see figure~\vref{fig:rigaku-smartlab-ph
 %
 %Both instruments used in this study were capable of collecting data in GIXRD mode (fixed $\omega$--2$\theta$). 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Thermal Analysis}
-\label{sec:Charact-Thermal}
-
-%%%%%%%
-
-\subsection{Thermogravimetric Analysis}
-
-Thermogravimetric analysis (TGA) is a very useful tool when attempting to determine the viability of a precursor in an ALD process. It allows for estimation of vaporization rate at various temperature rates as well as indications of chemical breakdown (i.e. thermalization) which would hinder the precursor's usefulness. 
-
-At its core, TGA is a measurement of mass loss as a function of temperature or time. A small sample (1--10 mg) of material is placed in a microgram balance pan and suspended inside a furnace. The furnace is then heated at a specified rate while the sample mass is carefully monitored. For the experiments used in this study (evaluation of thermal vaporization and thermal degradation) it is important to ensure that the testing environment is inert. This is accomplished by using a platinum pan in the microgram balance and constantly purging the furnace with a small flow of dry nitrogen gas. The heating rate can be varied according to a pre-determined program to provide more information at various individual temperatures. 
-
-This technique was used to evaluate various precursor candidates for the lead oxide half of the \PTO{} deposition procedure. The instrument used was a Q50 TGA device (fig.~\vref{fig:Q50-image}).  A detailed discussion of TGA procedures and the investigated chemicals can be found in subsequent chapters (see \vref{chap:Results-Thermal}). 
-
-\begin{figure}[tb]
-   \centering
-   \subfloat[Q50 TGA][Q50 TGA]{%
-   	\label{fig:Q50-image}%
-	\includegraphics[width=0.45\linewidth]{./figures/characterization/Q50-TGA}%
-	} 
-  \subfloat[Q2000 DSC][Q2000 DSC]{%
-   	\label{fig:Q2000-image}%
-	\includegraphics[width=0.45\linewidth]{./figures/characterization/Q2000-DSC}%
-	} 	
-   \caption[T.A. Instruments, inc. Instrumentation]%
-   		{Photograph of the thermal analysis instrumentation used during this study, \\
-		made by T.A.  Instruments, inc.}
-   \label{fig:TA-Instruments}
-\end{figure}
-
-%%%%%%%
-
-\subsection{Differential Scanning Calorimetry}
-	
-Differential scanning calorimetry (DSC) is a technique that allows for the determination of various critical temperatures for a material, and also can highlight changes in chemical structure due to degradation or other thermal processes. 
-
-DSC is the analysis of energy absorption as a function of temperature, which is the essence of calorimetry. DSC uses a sample and reference system to isolate the energy absorbed by the sample from that of the holder pan. Sample sizes usually range from 0.1--2 mg of material; as the samples used in this study are volatile the sample pans are hermetically sealed to prevent mass loss. The sample and reference pans are then placed inside a thermally insulated chamber. The temperature of each is carefully monitored, and differing amounts of heat are applied to negate the temperature difference between the sample and reference. The difference in absorbed heat as a function of temperature is then given as the result. In general, experiments include both heating and cooling curves to gain a complete understanding of the different energies. 
-	
-DSC was used to analyze the behavior of precursor chemicals around their evaporation and reaction temperatures. The main goal was to determine if the material underwent any thermally-activated degradation processes at either of these two temperature ranges. At the evaporation temperature, the sample was generally cycled multiple times to simulate actual use in the ALD. These measurements were taken using a Q2000 DSC system (fig.~\vref{fig:Q2000-image}) made by T.A. Instruments, inc.	
-	
 
 
 
