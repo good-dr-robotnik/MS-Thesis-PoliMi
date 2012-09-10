@@ -110,7 +110,7 @@ When considering the energetic behavior of \HFAc{} (see fig.~\vref{fig:DSC-HFAc}
 
 Similarly, when \TMHD{} is heated to moderate temperatures (up to 200\degC{}, see fig~\vref{fig:DSC-TMHD-200}), such as those used in the evaporation and transport stages of the ALD system, there are no irregularities in the data. There is also no net energy gain or loss during the test indicating that heating up to 200\degC{}, along with the associated melting and freezing of the compound, is not detrimental to its structure. 
 
-If the test is again performed, but with a higher upper temperature bound, the data is drastically different (see fig.~\vref{fig:DSC-TMHD-300}). As the sample is heated up to 300\degC{}, there are a number of significant energy releases that occur. These processes initiate at 234\degC{}, and are due to the precursor undergoing pyrolysis reactions. As such, this sets the safe upper temperature range for the ``ALD window'' of \TMHD{} at 230\degC{}. ALD reactions require that the precursor arrive to the surface intact and only react with surface species present. 
+If the test is again performed, but with a higher upper temperature bound, the data is drastically different (see fig.~\vref{fig:DSC-TMHD-300}). As the sample is heated up to 300\degC{}, there are a number of significant energy releases that occur. These processes initiate at 234\degC{}, and are due to the precursor undergoing pyrolysis reactions. As such, this sets the safe upper temperature range for the ``ALD window'' of \TMHD{} at 230\degC{}. ALD reactions require that the precursor arrive to the surface intact and only react with surface species. 
 
 \begin{figure}[tbp]
 	\centering
@@ -138,6 +138,7 @@ If the test is again performed, but with a higher upper temperature bound, the d
 Based on the results from the thermal analysis, a number of samples were deposited with various deposition parameters. Information on the deposition parameters for each of the samples used in this study can be found in the following table~\vref{tbl:LoSamples}. A small number of samples were attempted at 200\degC{}, but it was quickly determined that 225\degC{} provided better growth behavior without risking thermal cracking of the precursor. 
 
 {\small
+\vspace{2em}
 \begin{longtable}{cccccccc}
 	\caption[List of Samples]{A list of samples produced during the course of this project.%
 	\label{tbl:LoSamples}}\\
@@ -231,7 +232,7 @@ Given in table~\ref{tbl:LoThicknesses} is information on various samples and the
 	\label{fig:Ellip-rates}
 \end{figure}
 	
-An additional piece of information that can be extracted from ellipsometric analysis is an estimation of the band gap energy of the deposited layer. Because the final model used in the analysis method (see section~\vref{chap:Methods-Ellip-Analysis}) is physically descriptive of the optical properties of the material, it is possible to extract such information from the model. By transforming the plot of the extinction coefficient, $k$, into that of the absorption coefficient, $\alpha$, it becomes possible to use the method developed by Tauc, \emph{et.al.} \reword{[citation needed]} to determine the band gap energy of the material. However, such analysis does not take into account presence of multiple phases in the layer and takes a weighted average of the bandgaps. It also requires that the sample be properly crystallized, and thus must have undergone an annealing treatment before the analysis method becomes valid. However, since the samples produced here had low phase purity, which will be discussed in subsequent sections, this analysis was of little use as a film benchmark. Some results from these analyses can be found in section~\vref{sup:Ellipsometry}.
+An additional piece of information that can be extracted from ellipsometric analysis is an estimation of the band gap energy of the deposited layer. Because the final model used in the analysis method (see section~\vref{chap:Methods-Ellip-Analysis}) is physically descriptive of the optical properties of the material, it is possible to extract such information from the model. By transforming the plot of the extinction coefficient, $k$, into that of the absorption coefficient, $\alpha$, it becomes possible to use the method developed by Tauc, \emph{et.al.} to determine the band gap energy of the material.\cite{tauc_optical_1968,ablees_optical_1972} However, such analysis does not take into account presence of multiple phases in the layer; when multi-phase layers are present the resulting band gap can only be used as a rough estimate. Tauc analysis also requires that the sample be properly crystallized, and thus must have undergone an annealing treatment before the analysis method becomes valid. As samples produced here had low phase purity, which will be discussed in subsequent sections, this analysis was of little use as a film benchmark. Some results from these analyses can be found in section~\vref{sup:Ellipsometry}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -286,23 +287,64 @@ As mentioned in section~\ref{sec:Methods-XRF}, samples deposited on STO were una
 \label{chap:Results-XRD}
 
 
-XRD was performed on a number of samples that had indicated composition ratios near unity. After an annealing treatment, generally performed in a regular ambient environment furnace but occasionally through use of the RTA. However, samples processed using the RTA tended to obtain a unique and very rough surface texture, as opposed to the smooth mirror appearance of samples processed in the standard furnace. This observation lead to the adoption of the standard furnace as the main method of heat treatment. 
+XRD was performed on a number of samples that had indicated composition ratios near unity. After an annealing treatment, generally performed in a regular ambient environment furnace but occasionally through use of the RTA, the XRD data was taken. . However, samples processed using the RTA tended to obtain a unique and very rough surface texture, as opposed to the smooth mirror appearance of samples processed in the standard furnace. This observation lead to the adoption of the standard furnace as the main method of heat treatment. 
 
-
-Insets of collected data sets, enlarged to allow for better visual identification of peaks and their locations, are presented here. Full data sets are provided in section~\vref{sup:XRD}. 
-
-
+Analysis of XRD spectra made on the samples indicated a significant variety of phases present in the crystallized films. For example, figure~\vref{fig:XRD-0-Si-Full} gives the result from the sample \#0 deposited on a platinized silicon substrate. There are three major phases present: \ce{PbO2}, \ce{PbO}, and \PTO{}. The reflections from \PTO{} and lead(IV) oxide are much weaker than those from the lead(II) oxide. 
 
 \begin{figure}[htbp]
-	\subfloat[PTO (100) and PbO$_{2}$][PTO (100) and PbO$_{2}$]{%
-   		\label{fig:XRD-20-Pt-20-27}%
-		\includegraphics[width=0.47\textwidth]{./Figures/Data/XRD/Run-20-Pt/20-27.pdf}%
-	} \hspace{0.5cm}
-	\subfloat[PbO (220) and PTO (200)][PbO (220) and PTO (200)]{%
-   		\label{fig:XRD-20-Pt-43-48}%
-		\includegraphics[width=0.47\textwidth]{./Figures/Data/XRD/Run-20-Pt/43-48.pdf}%
-	}
+	\centering
+	\includegraphics[width=0.95\textwidth]{./Figures/Data/XRD/Run-0-si/10-50}
+	\caption[XRD Scan of \#0 on Si]%
+		{This data shows the result of diffractometry on sample \#0 Pt-Si. From this, the %
+		PTO(100) reflection can be identified, as well as some other lead oxide phases.}
+	\label{fig:XRD-0-Si-Full}
 \end{figure}
+
+However, other samples produced more interesting films. For example, sample \#23 on Pt-Si (see figure~\vref{fig:XRD-20-Pt-Full}), has strong reflections from the \PTO{} (110) and (101) planes. There was a significant number of impurity phases present, often in significant amounts, such as the pyrochlore phases \ce{Pb2Ti2O6} and \ce{PbTi3O7}, which indicates issues during the crystallization phase of the sample processing. However, the presence of the desired perovskite phase marked an important point in the course of this study, as it showed that the process is capable of accomplishing the goal of \PTO{} via ALD methodology. 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.95\textwidth]{./Figures/Data/XRD/Run-23-Pt/20-60}
+	\caption[XRD Scan of \#23 on Pt]%
+		{This data shows the result of diffractometry on sample \#23 Pt-Si. In this sample there are present a %
+		variety of phases. The inset shows the splitting of the \PTO{} peak, due to the tetragonal nature of the %
+		unit cell.}
+	\label{fig:XRD-23-Pt-Full}
+\end{figure}
+
+Additional samples provided similar results. For example, \#20 on Pt-Si (fig.~\vref{fig:XRD-20-Pt-Full}), has similar impurities but again exhibits an abundance of the \PTO{} phase. This sample has a slightly higher concentration of \ce{PbTi3O7}, and a slightly weaker reflection from the dominant PTO planes. 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.95\textwidth]{./Figures/Data/XRD/Run-20-Pt/20-50}
+	\caption[XRD Scan of \#20 on Pt-SI]%
+		{This data shows the result of diffractometry on sample \#20 Pt-Si. There are some impurity phases %
+		present, however the strongest signals are due to the \\\PTO{} (101) and (110) reflections (see inset).}
+	\label{fig:XRD-20-Pt-Full}
+\end{figure}
+
+Finally, investigation of a sample deposited on strontium titanate crystal (see figure~\vref{fig:XRD-28-STO-Full}) showed a strong preference of the PTO phase to orient with the orientation of the substrate. In this sample was also seen presence of titania phases (rutile, $\alpha$-\ce{TiO2}) as composed to samples deposited on Si and Pt-Si substrates. However, since the precise composition of films on STO is unknown the reason for finding \ce{TiO2} is unclear, likely due to an excess of titanium in the deposited film. 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.95\textwidth]{./Figures/Data/XRD/Run-28-STO/15-60}
+	\caption[XRD Scan of \#28 on STO]%
+		{This data shows the result of diffractometry on sample \#28 STO. Impurity phases were present %
+		(particularly $\alpha$-\ce{TiO2} and pyrochlore). It was also notable that the PTO phase preferentially %
+		oriented itself with the STO (001) substrate.}
+	\label{fig:XRD-28-STO-Full}
+\end{figure}
+
+%\begin{figure}[htbp]
+%	\subfloat[PTO (100) and PbO$_{2}$][PTO (100) and PbO$_{2}$]{%
+%   		\label{fig:XRD-20-Pt-20-27}%
+%		\includegraphics[width=0.47\textwidth]{./Figures/Data/XRD/Run-20-Pt/20-27.pdf}%
+%	} \hspace{0.5cm}
+%	\subfloat[PbO (220) and PTO (200)][PbO (220) and PTO (200)]{%
+%   		\label{fig:XRD-20-Pt-43-48}%
+%		\includegraphics[width=0.47\textwidth]{./Figures/Data/XRD/Run-20-Pt/43-48.pdf}%
+%	}
+%\end{figure}
 
 
 
