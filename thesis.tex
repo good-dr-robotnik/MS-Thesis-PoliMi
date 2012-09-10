@@ -97,7 +97,8 @@
 \widowpenalty=7500
 \clubpenalty=7500
 
-
+ \setlength{\textfloatsep}{1.5em}
+ \setlength{\intextsep}{1.5em}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%% MISCELLANEOUS ADJUSTMENTS   %%%%%%%%%%%%
@@ -179,7 +180,7 @@
 \thispagestyle{empty} % No headers/footers allowed here
 \include{./Preface/frontspace} % Opens a sub-TEX file. ./ is the current local directory. 
 
-\thispagestyle{empty} \normalfont \cleardoublepage  % No header/footer on this page, then starts new odd # page
+\cleardoublepage \thispagestyle{empty} \normalfont   % No header/footer on this page, then starts new odd # page
 \include{./Preface/copyright}
 
 \thispagestyle{empty} \normalfont \cleardoublepage
