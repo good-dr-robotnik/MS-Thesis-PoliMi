@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,twoside,openright]{report}
+\documentclass[11pt,letterpaper,twoside,openright]{report}
 
 % Document based upon the 'Report' class. 
 % Uses 11pt text in standard font families, paper size is globally set to A4, the PDF will be laid out as a two-sided 
@@ -6,7 +6,7 @@
 
 \includeonly{%		% comment out lines to not compile these sections when typesetting. 
 	%%Preface
-	./Preface/frontspace,%
+	./Preface/frontspace,
 	./Preface/copyright,%
 	./Preface/dedication,%
 	./Preface/toc,%
@@ -103,10 +103,22 @@
  \setlength{\textfloatsep}{1.5em}
  \setlength{\intextsep}{1.5em}
  
- \makeatletter\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else  \thispagestyle{empty}\hbox{}\newpage  \if@twocolumn\hbox{}\newpage\fi\fi\fi}\makeatother
+ \makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+  \thispagestyle{empty}\hbox{}
+\newpage
+  \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
 
 \makeatletter
-{\def\thebibliography#1{\chapter*{\bibname	\@mkboth{\bibname}{\bibname}}%	\list{[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}%	\leftmargin\labelwidth \advance\leftmargin\labelsep	\usecounter{enumi}}%	\def\newblock{\hskip.11em plus.33em minus.07em}%	\sloppy\clubpenalty4000\widowpenalty\clubpenalty	\sfcode‘\.=1000\relax}}{}
+{\def\thebibliography#1{\chapter*{\bibname
+	\@mkboth{\bibname}{\bibname}}%
+	\list{[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}%
+	\leftmargin\labelwidth \advance\leftmargin\labelsep
+	\usecounter{enumi}}%
+	\def\newblock{\hskip.11em plus.33em minus.07em}%
+	\sloppy\clubpenalty4000\widowpenalty\clubpenalty
+	\sfcode‘\.=1000\relax}}{}
 \makeatother
 
 \renewcommand{\bibname}{List of References}
