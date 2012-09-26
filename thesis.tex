@@ -46,6 +46,7 @@
 \usepackage{rotating}	% Allows rotation of objects (figures, tables, etc.). Preferable to use landscape environment in most cases (\begin{lscape})
 \usepackage{xnewcommand}
 \usepackage{siunitx}
+\usepackage{setspace}
 \usepackage{fancyhdr}	% Package for setting up headers and footers
 \usepackage[english]{babel}	% Language setting, not sure why its necessary, but is.
 \usepackage[nodayofweek]{datetime}	% Allows for proper determination of date
@@ -77,8 +78,9 @@
 		      pdftitle={Atomic Layer Deposition of Ferroelectric Complex Oxide Thin Films},%	Document title
 		      pdfauthor={Brian R. Beatty},%	Document author
 		      pdfsubject={M.S. Thesis},%	Document subject
-		      pdfkeywords={ALD, Atomic Layer Deposition, Ferroelectric, Complex Oxide, Perovskite,%
-		      			     Lead Titanate, Ellipsometry, PbTiO3, PTO},%	List of keywords for document
+		      pdfkeywords={ALD, Atomic Layer Deposition, Ferroelectric, Complex Oxide, Perovskite, %
+		      Lead Titanate, Lead Zirconate Titanate, PbTiO3, PTO, PT, PZT, Thin Film, Epitaxy},
+		      %List of keywords for document
 		      ]{hyperref}	
 
 
@@ -100,6 +102,16 @@
 
  \setlength{\textfloatsep}{1.5em}
  \setlength{\intextsep}{1.5em}
+ 
+ \makeatletter\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else  \thispagestyle{empty}\hbox{}\newpage  \if@twocolumn\hbox{}\newpage\fi\fi\fi}\makeatother
+
+\makeatletter
+{\def\thebibliography#1{\chapter*{\bibname	\@mkboth{\bibname}{\bibname}}%	\list{[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}%	\leftmargin\labelwidth \advance\leftmargin\labelsep	\usecounter{enumi}}%	\def\newblock{\hskip.11em plus.33em minus.07em}%	\sloppy\clubpenalty4000\widowpenalty\clubpenalty	\sfcode‘\.=1000\relax}}{}
+\makeatother
+
+\renewcommand{\bibname}{List of References}
+\addto{\captionsenglish}{\renewcommand{\bibname}{List of References}}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%% MISCELLANEOUS ADJUSTMENTS   %%%%%%%%%%%%
@@ -108,6 +120,8 @@
 \setlipsumdefault{1-2}  % Makes \lipsum automatically produce 2 paragraphs of filler text
 
 \renewcommand{\lipsum}{} % Hide dummy text paragraphs
+
+
 
 \renewcommand{\captionfont}{\normalfont \sffamily \itshape \small}
 %\renewcommand{\contentsname}{Table of Contents}
@@ -144,7 +158,7 @@
 
 \newcommand{\PTO}{\ce{PbTiO3}}
 
-\newcommand{\PZT}{\ce{PbTi_{1-x}Zr_{x}O3}}
+\newcommand{\PZT}{\ce{PbZr_{x}Ti_{1-x}O3}}
 
 \newcommand{\Deg}{$^{\circ}$}
 \newcommand{\degC}{$^{\circ}$C}
@@ -178,34 +192,43 @@
 
 %%% PREFACE %%%
 
-\thispagestyle{empty} % No headers/footers allowed here
+{\thispagestyle{empty} % No headers/footers allowed here
 \include{./Preface/frontspace} % Opens a sub-TEX file. ./ is the current local directory. 
+}
 
-\cleardoublepage \thispagestyle{empty} \normalfont   % No header/footer on this page, then starts new odd # page
-\include{./Preface/copyright}
+{\cleardoublepage \normalfont   % No header/footer on this page, then starts new odd # page
+\include{./Preface/copyright}}
 
-\thispagestyle{empty} \normalfont \cleardoublepage
-\include{./Preface/dedication}
+{\normalfont \cleardoublepage
+\include{./Preface/dedication}}
+\fancyfoot[C]{\thepage}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
 
-\thispagestyle{empty}  \cleardoublepage
 
-\linenumbers	% Starts numbering of document lines
+{\cleardoublepage
+\pagestyle{fancy}
+%\linenumbers			% Starts numbering of document lines
 \pagenumbering{roman} %Start numbering preface pages using roman numerals (i, ii, iii, iv, ...)
-
-\thispagestyle{empty} \vspace*{.75truecm} \cleardoublepage
-\include{./Preface/toc}
+%\addtocounter{page}{-2}
+%\vspace*{.75truecm}
+\include{./Preface/toc}}
 
 \include{./Preface/acknowledgements}
-\thispagestyle{empty} \vspace*{.75truecm} \normalfont \cleardoublepage
+%\vspace*{.75truecm} 
+\normalfont \cleardoublepage
 
 \include{./Preface/abstract}
-\thispagestyle{empty} \vspace*{.75truecm} \cleardoublepage
+%\vspace*{.75truecm} 
+\cleardoublepage
 
 \include{./Preface/sommario}
-\thispagestyle{empty} \vspace*{.75truecm} \cleardoublepage
+%\vspace*{.75truecm}
+\cleardoublepage
 
 %%% END OF PREFACE %%%
-
+\fancyhead{}
+\fancyfoot{}
 \pagenumbering{arabic}  % Start numbering pages using arabic numerals (1, 2, 3, 4, ...)
 
 
@@ -218,13 +241,7 @@
 \renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter :\ #1}{}} % Changes definitions for chapter titles in header
 \renewcommand{\sectionmark}[1]{\markright{\thesection :\ #1}}         % Changes definitions for section titles in header
 
-\fancyfoot{}
-
-\fancyhead[LE,RO]{\bfseries\thepage}    % Page number will be bold and appear on the left side on even pages (LE) and the right side on odd pages (RO).
-                                        
-\fancyhead[RE]{\bfseries\leftmark}    % Uses default settings for right page headers (chapter number and title)
-\fancyhead[LO]{\bfseries\rightmark}     % Uses default settings for left page (section number and title
-\renewcommand{\headrulewidth}{0.3pt} % Changes geometry settings
+ % Changes geometry settings
 
 
 
@@ -252,6 +269,7 @@
 
 
 % ---- Bibliography ----
+
 \addcontentsline{toc}{chapter}{Bibliography} % Adds Bibliography chapter entry to ToC. 
 \bibliographystyle{unsrt} % This will not sort the bibliography in anyway, but instead will sort by order of appearance in the document. Other styles available.
 

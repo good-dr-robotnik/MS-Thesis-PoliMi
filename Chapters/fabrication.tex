@@ -15,7 +15,7 @@
 %%%%%%%%%%%%%%%
 \subsection{Titanium Source}
 
-The source of titanium that was used was titanium(IV) isopropoxide (\TiOiPr{}, \ce{Ti(OCH(CH3)2)4}). This compound is very commonly used in ALD literature.\cite{cianci_atomic_2012,tallarida_growth_2011,lehnert_plasma_2012,cleveland_role_2012,kubrin_stacking_2012,lee_emph-situ_2012} It is a liquid precursor with a high vapor pressure and reacts easily with most oxidizers; the most commonly used oxidant for this reaction is water vapor, similar to the TMA-\ce{H2O} reaction (see section~\vref{sec:Synth-ALD}). 
+The source of titanium that was used was titanium(IV) isopropoxide (\TiOiPr{}, \ce{Ti(OCH(CH3)2)4}). This compound is very commonly used in ALD literature.\cite{cianci_atomic_2012,tallarida_growth_2011,lehnert_plasma_2012,cleveland_role_2012,kubrin_stacking_2012,lee_emph-situ_2012} It is a liquid precursor with a high vapor pressure and reacts easily with most oxidizers; the most commonly used oxidant for this reaction is water vapor, similar to the TMA-\ce{H2O} reaction (see Section~\vref{sec:Synth-ALD}). 
 
 %%%%%%%%%%%%%%%
 \subsection{Lead Source}
@@ -26,7 +26,7 @@ To this end, there were four potential candidates that were investigated which w
 
 \ce{Ph4Pb} was one of the commonly used compounds in both ALD and MOCVD references, but it was found to have insufficient volatility for use in the ALD (up to its maximum evaporation temperature of 200\degC{})\cite{harjuoja_2006} and was thus discarded as a candidate. \TMHD{} was another commonly referenced precursor\cite{watanabe_growth_2007}, as was \HFAc{}.\cite{Igumenov_1998} \ce{Pb(DMAMP)2} was seemingly a viable choice, with a very high vapor pressure at low temperatures,\cite{Hwang_2007} but it was not readily available from chemical suppliers and was very costly to purchase which also kept it from being considered further. 
 
-Thus, the two compounds \HFAc{} and \TMHD{} were investigated in detail as potential candidates for the lead precursor in the ALD deposition of \PTO{}. Samples of both precursors were obtained from Strem Chemicals, inc.\cite{strem_inc} and were analyzed to determine which would be most viable. Tests included thermogravimetric analysis (TGA), differential scanning calorimetry (DSC), as well as test depositions of ALD films. 
+Thus, the two compounds \HFAc{} and \TMHD{} were investigated in detail as potential candidates for the lead precursor in the ALD deposition of \PTO{}. Samples of both precursors were obtained from Strem Chemicals, Inc.\cite{strem_inc} and were analyzed to determine which would be most viable. Tests included thermogravimetric analysis (TGA), differential scanning calorimetry (DSC), as well as test depositions of ALD films. 
 
 %%%%%%%%%%%%%%%
 
@@ -37,6 +37,72 @@ Three potential oxidants were considered; these included water, oxygen, and an o
 The choice of titanium(IV) isopropoxide as the titanium source allows for any of the three selected oxidizers to be used. A hydrolysis reaction will occur when exposed to water vapor; in the case of oxygen or ozone the ligands will be consumed via a combustion reaction.\cite{ALD-Handbook,Leskela_2002,lim_atomic_2003}
 
 Based on literature reports, the two lead precursors under investigation do not undergo hydrolysis when exposed to water, and as such require the use of the combustion pathway. In addition, through the deposition of test films, it was found that the reaction proceeded more completely when the \ce{O3}/\ce{O2} mixture was used. For simplicity of the process, the \ce{O3}/\ce{O2} mix was used for both half-reactions.\cite{KeunKim2005103}
+
+
+%%%%%%%%%%%%%%%
+
+\subsection{Proposed Reaction Pathway}
+
+The reaction pathway seen in figure~\vref{fig:PTO-pathway} is a simplified graphical visualization (in the same character as that seen in figure~\vref{fig:TMA-illustration} for TMA) of ALD deposition using \TMHD{} and \TiOiPr{} and an \ce{O2}/\ce{O3} mixture as an oxidant.  
+
+The chemical reactions seen below (in reactions R~\ref{rxn:PTO-Pb1}--\ref{rxn:PTO-Ti2}) also propose a preliminary mechanism for the chemisorption and oxidation/combustion of the precursors to deposit the film. As the materials involved are rather large, in particular \TMHD{}, the molecules have a large stearic hindrance once the chemisorption begins. This impedes the deposition of more than a small fraction of a monolayer per cycle, with lead depositing more slowly than titanium. Therefore, it is likely to have to apply the \TMHD{} half-reaction more often than the \TiOiPr{} reaction when depositing the material. 
+
+{\small \addtocounter{reaction}{-2} \onehalfspacing
+\begin{reactions}
+	Pb(TMHD)2 + M-OH_{surf} &-> M-O-Pb(TMHD)_{\,surf} + H(TMHD) \label{rxn:PTO-Pb1}%
+%		\AddRxnDesc{PTO: Pb(TMHD) chemisorption}%
+		\\
+	M-O-Pb(TMHD)_{\,surf} + xO2 + xO3 &-> M-O-Pb(OH)3_{\,surf} + yCO2 + zH2O \label{rxn:PTO-Pb2}%
+%		\AddRxnDesc{PTO: Pb(TMHD) oxidation}
+		\\
+	Ti(OCH(CH3)2)4 + M-OH_{surf} &-> M-O-Ti(OCH(CH3)2)3_{\,surf} + HOC3H7 \label{rxn:PTO-Ti1}%
+%		\AddRxnDesc{PTO: Pb(TMHD) chemisorption}%
+		\\
+	M-O-Ti(OCH(CH3)2)3_{\,surf} + xO2 + xO3 &-> M-O-Ti(OH)3_{\,surf} + yCO2 + zH2O \label{rxn:PTO-Ti2}%
+%		\AddRxnDesc{PTO: Pb(TMHD) oxidation}%
+\end{reactions}
+}
+
+\begin{figure}[tbp]
+   \centering
+   \subfloat[][Ti Precursor injection]{%
+%   	\label{fig:Q50-image}%
+	\includegraphics[width=5cm]{./figures/synthesis/chemdraw/a}%
+	} 
+	\hspace{1cm}
+  \subfloat[][Ti Chemisorption]{%
+%   	\label{fig:Q50-image}%
+	\includegraphics[width=5cm]{./figures/synthesis/chemdraw/b}%
+	} \\
+  \subfloat[][Ti Ligand Oxidation]{%
+%   	\label{fig:Q50-image}%
+	\includegraphics[width=5cm]{./figures/synthesis/chemdraw/c}%
+	}  
+	\hspace{1cm}	
+  \subfloat[][Pb Precursor Injection]{%
+%   	\label{fig:Q2000-image}%
+	\includegraphics[width=5cm]{./figures/synthesis/chemdraw/d}%
+	} \\
+  \subfloat[][Pb Chemisorption]{%
+%   	\label{fig:Q2000-image}%
+	\includegraphics[width=5cm]{./figures/synthesis/chemdraw/e}%
+	} 
+	\hspace{1cm} 
+  \subfloat[][Pb Ligand Oxidation]{%
+%   	\label{fig:Q2000-image}%
+	\includegraphics[width=5cm]{./figures/synthesis/chemdraw/f}%
+	} \\
+  \subfloat[][Completed Cycle, Regenerated Surface]{%
+%   	\label{fig:Q2000-image}%
+	\includegraphics[width=5cm]{./figures/synthesis/chemdraw/g}%
+	} 	
+   \caption[Illustration of Example \PTO{} ALD Cycle]%
+   		{Proposed schematic of \TMHD{} and \TiOiPr{} based ALD deposition for \PTO{}. Purging steps %
+		are omitted from this diagram, but would be present between each injection. Steps (d)--(f) would be %
+		repeated to incorporate more lead into the film.}
+   \label{fig:PTO-pathway}
+\end{figure}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -50,7 +116,7 @@ Fabrication and preparation of substrates was an important part of the depositio
 %%%%%%%%%%%%%%%
 \subsection{Si(100)} \label{sec:Si}
 
-The silicon substrates were prepared in a simple manner. 4 in. diameter silicon wafers with 200 nm of thermally grown oxide were diced into 1.5 cm x 1.5 cm pieces. When a sample was to be used for deposition, it was cleaned by one minute of sonication in acetone, followed by isopropanol, with a subsequent 5 minutes of sonication in deionized (DI) water. These were then air dried with dry nitrogen. Finally, the substrates were cleaned in a oxygen plasma cleaning system to remove any remaining organic residues present on the surface.\cite{kern_handbook_1993} 
+The silicon substrates were prepared in a simple manner. 4 in. diameter silicon wafers with 200 nm of thermally grown oxide (purchased from University Wafer, Inc.\cite{strem_inc}) were diced into 1.5 cm x 1.5 cm pieces. When a sample was to be used for deposition, it was cleaned by one minute of sonication in acetone, followed by isopropanol, with a subsequent 5 minutes of sonication in deionized (DI) water. These were then air dried with dry nitrogen. Finally, the substrates were cleaned in a oxygen plasma cleaning system to remove any remaining organic residues present on the surface.\cite{kern_handbook_1993} 
 
 
 %%%%%%%%%%%%%%%
@@ -65,11 +131,9 @@ If the samples are stored, it is recommended to again clean the samples in the s
 
 \subsection{Single Crystal STO(100)}
 
-Oxide crystal substrates were prepared in such a fashion as to promote the formation of atomically flat terraces. This has the advantage of promoting a uniform surface species across the entire sample --- the etchant used in this process leaves the sample titania-terminated.\cite{koster_quasi-ideal_1998}
+Single crystal substrates of strontium titanate (\ce{SrTiO3}(100), STO) were purchased from MTI Crystal, Inc.\cite{MTIXtal_inc} as 5 x 5 x 0.5 mm or 10 x 10 x 0.5 mm pieces. These were subsequently processed in such a fashion as to promote the formation of atomically flat terraces. This has the advantage of promoting a uniform surface species across the entire substrate --- the etching process leaves the substrates uniformly titania-terminated.\cite{koster_quasi-ideal_1998}
 
-To prepare these samples, the substrates are first pre-cleaned in a four step sonication process. The samples were cleaned for five minutes in each of acetone, methanol, and isopropyl alcohol. Subsequently, the samples were sonicated for fifteen minutes in DI water.\cite{koster_quasi-ideal_1998} The substrates were then immersed into a commercially prepared buffered hydrofluoric acid (BHF) solution to etch for 30 seconds, then removed and flushed with copious quantities of DI water to purge any remaining BHF solution.  Once the sample is thoroughly rinsed, the samples are dried using dry nitrogen.\cite{koster_quasi-ideal_1998} 
-
-After the etching process, the samples are annealed at 950\degC{} for one hour.\cite{koster_quasi-ideal_1998} Once the samples are cooled, they are ready for immediate use. AFM can be used to confirm the presence of well-defined atomic terraces. 
+To achieve the desired surface, the substrates were first pre-cleaned in a four step sonication process. The crystals were cleaned for five minutes in each of acetone, methanol, and isopropyl alcohol. Subsequently, the substrates were sonicated for fifteen minutes in DI water.\cite{koster_quasi-ideal_1998} Next, the substrates were then immersed into a commercially prepared buffered hydrofluoric acid (BHF) solution to etch for 30 seconds, then removed and flushed with copious quantities of DI water to purge any remaining BHF solution.  Once the sample were thoroughly rinsed, they were dried using dry nitrogen. After the etching process, the substrates were annealed at 950\degC{} for one hour.\cite{koster_quasi-ideal_1998} Atomic force microscopy (AFM) was used to confirm the presence of well-defined atomic terraces. 
 
 If the samples are stored, it is recommended to again clean the samples in the standard procedure (see \vref{sec:Si}).
 
@@ -100,7 +164,7 @@ For an ALD run to be successful, the acceptable temperature window for all of th
 
 The dosage of precursor or oxidant to the surface is another parameter of critical importance. An ALD reaction requires a minimal amount of precursor to sufficiently saturate the surface, while it is beneficial to minimize any excess precursor as it will be a wasted byproduct (minimizing costs, environmental impact, etc.). 
 
-The vaporization behavior of the precursor can have a dramatic impact on how simple or difficult it is to deliver a saturating dose to the surface. Some materials have readily available precursors with high vapor pressures; titanium isopropoxide and trimethylaluminum (TMA) are both liquids, and tetrakis(dimethylamido)hafnium (\ce{Hf\{N(CH3)2\}4}) is a low-melting temperature solid. These are commonly used precursors for depositing their respective oxides. This vapor pressure becomes an important consideration when choosing a potential compound for use in ALD (as discussed in section~\vref{sec:SampFab-Precursors}).\cite{ALD-Handbook,kanjolia_design_2008,Leskela_2002,lim_atomic_2003,Ritala_ALD_2003}
+The vaporization behavior of the precursor can have a dramatic impact on how simple or difficult it is to deliver a saturating dose to the surface. Some materials have readily available precursors with high vapor pressures; titanium isopropoxide and trimethylaluminum (TMA) are both liquids, and tetrakis(dimethylamido)hafnium (\ce{Hf\{N(CH3)2\}4}) is a low-melting temperature solid. These are commonly used precursors for depositing their respective oxides. This vapor pressure becomes an important consideration when choosing a potential compound for use in ALD (as discussed in Section~\vref{sec:SampFab-Precursors}).\cite{ALD-Handbook,kanjolia_design_2008,Leskela_2002,lim_atomic_2003,Ritala_ALD_2003}
 
 Insufficient dosing is apparent in a deposition run by a slower than average growth rate, or also as a non-uniform deposition rate across the sample. However, overdosing is not readily apparent in an ALD-mode deposition. The dose must be lowered to a point where the dose is insufficient, and then increased back to a saturating level. 
 
